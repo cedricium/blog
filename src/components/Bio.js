@@ -28,10 +28,10 @@ class Bio extends React.Component {
         />
         <p>
           Written by <strong>Cedric Amaya</strong> who is currently studying
-          Computer Science in sunny California.{' '}
+          Computer Science in sunny California. You should{' '}
           <a href="https://twitter.com/cedricamaya">
-            You should follow him on Twitter
-          </a>
+            follow him on Twitter
+          </a>.
         </p>
       </div>
     )

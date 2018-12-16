@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import Footer from '../components/Footer'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -39,6 +40,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+        <Footer />
       </Layout>
     )
   }
