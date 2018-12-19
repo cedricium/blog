@@ -1,4 +1,107 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[A collection of my random thoughts.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Dec 2018 21:04:41 GMT</lastBuildDate><item><title><![CDATA[Advice for Beginners]]></title><description><![CDATA[Originally published on the r/learnprogrammig subreddit. For those struggling and comparing themselves to others… I’m right there with you…]]></description><link>https://cedric.tech/blog/advice-for-beginners/</link><guid isPermaLink="false">https://cedric.tech/blog/advice-for-beginners/</guid><pubDate>Sat, 15 Dec 2018 17:15:40 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Originally published on the r/learnprogrammig subreddit.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[A collection of my random thoughts.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 19 Dec 2018 07:41:29 GMT</lastBuildDate><item><title><![CDATA[My Process of Building Side Projects]]></title><description><![CDATA[For those who don’t know, I’m a Computer Science major and I enjoy programming
+outside of school and work. There’s something about getting…]]></description><link>https://cedric.tech/blog/building-side-projects/</link><guid isPermaLink="false">https://cedric.tech/blog/building-side-projects/</guid><pubDate>Tue, 18 Dec 2018 23:30:00 GMT</pubDate><content:encoded>&lt;p&gt;For those who don’t know, I’m a Computer Science major and I enjoy programming
+outside of school and work. There’s something about getting to make whatever you
+want while also having total ownership of a project that makes building side
+projects so addicting. I’ve heard it compared to other hobbies such as gaming
+or playing sports.&lt;/p&gt;
+&lt;p&gt;Although many side projects may go unfinished or unreleased,
+I feel as though there is still a lot of experience to gain from simply starting
+a project in the first place. In this post, I will walk you through my process
+of coming up with an idea of what to make, taking said idea and turning it into
+something tangible, to putting the project out in the world.&lt;/p&gt;
+&lt;p&gt;Before we begin, I will warn you that my process is by no means perfect. As I’ll
+discuss later, there are a few things I would like to do differently in the future
+since my current process of building side projects can seem anomalous at times.&lt;/p&gt;
+&lt;h4&gt;Coming Up with an Idea 💡&lt;/h4&gt;
+&lt;p&gt;In order to build something, you first need an idea. I find this to be one of
+the hardest parts of side projects. This is simply because if there is no idea,
+there can’t be a project. To get around this potential roadblock, I like to
+examine my own daily life and see what areas I could possibly speed up or
+improve. Having intimate knowledge of the problem you’re trying to solve will
+make building a side project that much easier.&lt;/p&gt;
+&lt;h4&gt;Preliminary Research 🧐&lt;/h4&gt;
+&lt;p&gt;Once I have an idea in mind, I like to see what existing solutions already exist.
+Now, if I find more than a few existing projects that solve the same issue that
+I was hoping to tackle, then I usually will not continue with that project. This
+is one of those situations that I mentioned earlier where I’m sort of peculiar—
+the fact that there are already projects that try to solve an issue means that
+your idea has already been validated—this is good news! Don’t be discouraged if
+there are already other projects out there. &lt;/p&gt;
+&lt;p&gt;I find that if I do try to tackle such problems, I will often mimic the existing
+projects’ solutions rather than building something unique. Although imitating one
+project’s solution to help you solve an issue can be helpful, I have found that
+relying too much on this method then makes it harder for me to build projects that
+require unique and sophisticated solutions later on.&lt;/p&gt;
+&lt;h4&gt;Choosing a Tech Stack 🥞&lt;/h4&gt;
+&lt;p&gt;Now that I have an idea and know I want to commit to this side project, the next
+thing I do is research what tech stack I will use to turn the idea into a real
+thing. This step assumes you’ve already determined the area or type of project
+you are going to make—be it a browser extension, CLI tool, a web or mobile app,
+etc. I love JavaScript and thanks to the run-time environment Node.js, I can make
+projects as just about any application type. With the language selected, I then
+will decide if I want to use any libraries that could help speed up the
+development time and if I’m unfamiliar with a particular library, I will read
+their documentation.&lt;/p&gt;
+&lt;h4&gt;Coding → MVP 🦴&lt;/h4&gt;
+&lt;p&gt;Time for the fun part: coding! With an idea in mind and the right tools selected
+to build said idea, I get to work. Programming can be a double-edged sword when
+creating a side project: when it’s going well, I love it. But when I get stuck on
+an issue that I can’t immediately solve, I also really hate it. Throughout the
+development process, these two emotions can cycle between overpowering one
+another. At times, I feel so defeated by a bug and want to give up entirely only
+to get the biggest boost of confidence after stepping away and figuring out how
+to squash the bug. I like to say making side projects can be like war—it’s
+essentially a series of battles composed of wins and losses, me versus my code.&lt;/p&gt;
+&lt;p&gt;Eventually I come out victorious and emerge with something that works and solves
+the original problem. This will almost always be a minimum viable product, or MVP.
+The MVP serves as the skeleton for the finished product without all the bells and
+whistles that will eventually make it complete.&lt;/p&gt;
+&lt;h4&gt;Break from Code—Design Time 🎨&lt;/h4&gt;
+&lt;p&gt;This is the step in the process where I like to start thinking about how I will
+market my side project while also giving myself a break from coding. Like a
+newborn baby, the project needs a name. This can be as simple or extravagant as
+you would like. Once a name is selected, I think about branding. What will the
+main colors of the project be? What graphic or logo can best represent this
+project? What font? Having answers to those questions then allows me to put my
+creativity to use. Using design software (I’m a big fan of Sketch), I will put
+together a press kit or package of promotional material (namely good-looking
+graphics) to be used later on for open graph meta tags or product launches on
+sites like Product Hunt or Reddit.&lt;/p&gt;
+&lt;h4&gt;Wrapping Up 🎀&lt;/h4&gt;
+&lt;p&gt;Seem like a long process yet? Luckily, we’re just about done. After my creative
+sprint, I go back to programming and flesh out the MVP. On goes the remaining
+features I thought would be useful and any bug fixes that are critical.&lt;/p&gt;
+&lt;p&gt;Note: there will always be bugs, so do not try to fix them all before launching
+your product.&lt;/p&gt;
+&lt;h4&gt;Launching 🚀&lt;/h4&gt;
+&lt;p&gt;By now, I have a finished product and I’m ready to show it to the world. With the
+press kit I made earlier, I hit up several relevant subreddits to the project I
+just made and create posts that describe what the project is, why I made it, and
+where to find it. Posting on Reddit will give my project some exposure and
+feedback that I can then use to fix or tweak before launching on Product Hunt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;Looking Ahead 🔭&lt;/h4&gt;
+&lt;p&gt;After having gone through this entire process several times and starting the
+process but not finishing many more times, I feel as though there is room
+for improvement.&lt;/p&gt;
+&lt;p&gt;Firstly, deciding whether or not to build something based on the number of
+existing projects is kind of silly. Even if there are many solutions out there,
+your take and solution to the problem is unique and therefore could end up
+being a better solution than all the other projects.&lt;/p&gt;
+&lt;p&gt;Lastly, it’s really important to get your project out in the hands of the public
+as soon as possible as this will significantly improve your chances of actually
+completing it. Too many times to count have I worked on a project in isolation
+without letting others try it which resulted in a “failed” launch. This is simply
+due to the fact that I assumed I knew what people would want, rather than actually
+letting them tell me. A costly mistake if you’re hoping to have users other than
+yourself use the project.&lt;/p&gt;
+&lt;p&gt;So what’s in store? I hope to work on the above issues while also continually
+improving the process I’ve since been following. I feel as though the side
+projects I’ve made up until this point have been quite small in scope, so in the
+future I also plan on taking on larger problems that require more complex
+solutions. Finally, I would love to make something that I can monetize and earn
+some extra side income from.&lt;/p&gt;
+&lt;p&gt;I guess I already have some goals for 2019.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Advice for Beginners]]></title><description><![CDATA[Originally published on the r/learnprogrammig subreddit. For those struggling and comparing themselves to others… I’m right there with you…]]></description><link>https://cedric.tech/blog/advice-for-beginners/</link><guid isPermaLink="false">https://cedric.tech/blog/advice-for-beginners/</guid><pubDate>Sat, 15 Dec 2018 17:15:40 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Originally published on the r/learnprogrammig subreddit.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;For those struggling and comparing themselves to others…&lt;/h3&gt;
 &lt;p&gt;I’m right there with you. I’ve been programming for about three years now and
 although I wouldn’t consider myself a beginner, I’m by no means an expert and
