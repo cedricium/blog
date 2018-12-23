@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'My Random Thoughts',
     author: 'Cedric Amaya',
-    description: 'A collection of my random thoughts.',
+    description: 'Essays, musings, and more by Cedric Amaya.',
     siteUrl: 'https://cedric.tech/blog',
   },
   pathPrefix: '/blog',

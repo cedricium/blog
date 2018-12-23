@@ -20,6 +20,52 @@ class BlogIndex extends React.Component {
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
+          meta={[
+            {
+              name: `description`,
+              content: siteDescription,
+            },
+            {
+              property: `og:title`,
+              content: siteTitle,
+            },
+            {
+              property: `og:description`,
+              content: siteDescription,
+            },
+            {
+              property: `og:type`,
+              content: `website`,
+            },
+            {
+              property: `og:url`,
+              content: `https://cedric.tech/blog`
+            },
+            {
+              property: `og:image`,
+              content: `https://cedric.tech/blog/og-image.png`
+            },
+            {
+              name: `twitter:card`,
+              content: `summary_large_image`,
+            },
+            {
+              name: `twitter:creator`,
+              content: `@CedricAmaya`,
+            },
+            {
+              name: `twitter:title`,
+              content: siteTitle,
+            },
+            {
+              name: `twitter:description`,
+              content: siteDescription,
+            },
+            {
+              name: `twitter:image`,
+              content: `https://cedric.tech/blog/og-image.png`
+            },
+          ]}
         />
         <Bio />
         {posts.map(({ node }) => {
