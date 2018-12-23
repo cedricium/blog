@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
+import SEO from '../components/SEO'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -16,57 +17,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-          meta={[
-            {
-              name: `description`,
-              content: siteDescription,
-            },
-            {
-              property: `og:title`,
-              content: siteTitle,
-            },
-            {
-              property: `og:description`,
-              content: siteDescription,
-            },
-            {
-              property: `og:type`,
-              content: `website`,
-            },
-            {
-              property: `og:url`,
-              content: `https://cedric.tech/blog`
-            },
-            {
-              property: `og:image`,
-              content: `https://cedric.tech/blog/og-image.png`
-            },
-            {
-              name: `twitter:card`,
-              content: `summary_large_image`,
-            },
-            {
-              name: `twitter:creator`,
-              content: `@CedricAmaya`,
-            },
-            {
-              name: `twitter:title`,
-              content: siteTitle,
-            },
-            {
-              name: `twitter:description`,
-              content: siteDescription,
-            },
-            {
-              name: `twitter:image`,
-              content: `https://cedric.tech/blog/og-image.png`
-            },
-          ]}
-        />
+        <SEO />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
