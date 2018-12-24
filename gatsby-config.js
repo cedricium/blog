@@ -52,7 +52,7 @@ module.exports = {
         short_name: `Thoughts`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#007acc`,
+        theme_color: `#007bff`,
         display: `minimal-ui`,
         icon: `src/assets/favicon.png`,
       },

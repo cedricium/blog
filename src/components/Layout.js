@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import 'typeface-source-sans-pro'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -13,8 +14,8 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            // ...scale(1.25),
-            marginBottom: rhythm(1.5),
+            ...scale(1.25),
+            marginBottom: rhythm(1),
             marginTop: 0,
           }}
         >
@@ -34,7 +35,6 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
             marginBottom: rhythm(-1),
           }}
@@ -43,7 +43,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: '#007acc',
+              color: '#007bff',
             }}
             to={'/'}
           >

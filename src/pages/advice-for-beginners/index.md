@@ -5,7 +5,7 @@ date: "2018-12-15T17:15:40.000Z"
 
 *Originally published on the r/learnprogrammig subreddit.*
 
-### For those struggling and comparing themselves to others...
+#### For those struggling and comparing themselves to others...
 
 I'm right there with you. I've been programming for about three years now and
 although I wouldn't consider myself a beginner, I'm by no means an expert and
