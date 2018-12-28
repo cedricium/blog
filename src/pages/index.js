@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-        <Footer />
+        <Footer location={this.props.location} />
       </Layout>
     )
   }

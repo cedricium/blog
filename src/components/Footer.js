@@ -44,6 +44,16 @@ class Footer extends React.Component {
           rel="noopener noreferrer">
           linkedin
         </a>
+        {
+          this.props.location.pathname !== '/about' &&
+          <span>
+            {' '}&bull;{' '}
+            <Link
+              to="/about">
+              about me
+            </Link>
+          </span>
+        }
       </footer>
     )
   }
