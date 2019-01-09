@@ -1,6 +1,7 @@
 ---
 title: "My Process of Building Side Projects"
 date: "2018-12-18T23:30:00.000Z"
+draft: false
 ---
 
 For those who don't know, I'm a Computer Science major and I enjoy programming

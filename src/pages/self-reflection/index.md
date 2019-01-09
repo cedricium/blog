@@ -1,6 +1,7 @@
 ---
 title: "Self Reflection"
 date: "2018-12-21T00:53:55.537Z"
+draft: true
 ---
 
 This piece was originally going to be called "Why I Write". For better or worse

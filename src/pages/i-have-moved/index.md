@@ -1,6 +1,7 @@
 ---
 title: I Have Moved
 date: "2018-12-12T21:48:40.000Z"
+draft: false
 ---
 
 No, I haven't moved physically. Rather, I've moved my blog. My first blog,
