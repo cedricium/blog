@@ -45,7 +45,7 @@ class Footer extends React.Component {
           linkedin
         </a>
         {
-          this.props.location.pathname !== '/about' &&
+          !this.props.location.pathname.includes('/about') &&
           <span>
             {' '}&bull;{' '}
             <Link
