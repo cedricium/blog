@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Fri, 28 Dec 2018 08:08:41 GMT</lastBuildDate><item><title><![CDATA[My Process of Building Side Projects]]></title><description><![CDATA[For those who don’t know, I’m a Computer Science major and I enjoy programming
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 09 Jan 2019 03:20:00 GMT</lastBuildDate><item><title><![CDATA[Self Reflection]]></title><description><![CDATA[This piece was originally going to be called “Why I Write”. For better or worse
+(and advised as okay by Paul Graham), I’ve since pivoted the…]]></description><link>https://cedric.tech/blog/self-reflection/</link><guid isPermaLink="false">https://cedric.tech/blog/self-reflection/</guid><pubDate>Fri, 21 Dec 2018 00:53:55 GMT</pubDate><content:encoded>&lt;p&gt;This piece was originally going to be called “Why I Write”. For better or worse
+(and advised as okay by Paul Graham), I’ve since pivoted the main topic of this
+post to instead focus more generally on my motivation to create—be it via
+writing, programming, designing, or drawing. But this post does not only focus
+on the motivation why I do these activities, rather, it also looks at why I don’t
+do these things when required of me, namely academically-speaking.&lt;/p&gt;
+&lt;!-- 
+  Elaborate on why it was going to be &quot;why I write&quot; and how the shift in focus occurred
+  &quot;why I write?&quot; turned into &quot;why do I partake in any creative endeavor?&quot;
+  esp. since I should be doing so in school but ultimately don&apos;t
+ --&gt;
+&lt;!--
+  Make note of why this is important - hopefully better understand myself
+  and make the appropriate changes (makes sense with New Years right around the corner)
+--&gt;
+&lt;p&gt;Thus, through the inquisition of myself and some research, this essay aims to
+answer the following questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Can lazy people, who do not apply themselves academically, pursue creative
+and/or mentally-demanding endeavors?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What motivates these individuals?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can said motivation be applied towards performing at a higher level academically?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+  Myself as case study
+   - explain relationship w/ school
+   - grades
+   - general performance
+--&gt;
+&lt;!-- 
+  With my own thoughts on the topic (refletion) &amp; answers from reddit,
+  answer all three questions
+ --&gt;
+ &lt;!-- 
+  With answers in mind, think about what can be changed and/or done differently
+  in order to lead a better lifestyle in terms of school
+  --&gt;</content:encoded></item><item><title><![CDATA[My Process of Building Side Projects]]></title><description><![CDATA[For those who don’t know, I’m a Computer Science major and I enjoy programming
 outside of school and work. There’s something about getting…]]></description><link>https://cedric.tech/blog/building-side-projects/</link><guid isPermaLink="false">https://cedric.tech/blog/building-side-projects/</guid><pubDate>Tue, 18 Dec 2018 23:30:00 GMT</pubDate><content:encoded>&lt;p&gt;For those who don’t know, I’m a Computer Science major and I enjoy programming
 outside of school and work. There’s something about getting to make whatever you
 want while also having total ownership of a project that makes building side
