@@ -27,7 +27,7 @@ following way:
     reached, older things are replaced and essentially deleted from history
   - saves are stored in reverse chronological order (latest to oldest) 
   - no way whatsoever to filter or sort saved content
-  - no searching capbility is provided
+  - no searching capability is provided
   - pagination limit on Reddit site is limited to 25 items, thus requiring users
     to use the "Next Page" or "Prev Page" buttons a lot
 
