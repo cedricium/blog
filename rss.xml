@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 04 Feb 2019 20:17:18 GMT</lastBuildDate><item><title><![CDATA[Reddit's Save Functionality Sucks]]></title><description><![CDATA[The Problem I have been a Redditor for over six years and was a “lurker” for a year before
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 06 Feb 2019 03:32:17 GMT</lastBuildDate><item><title><![CDATA[Reddit's Save Functionality Sucks]]></title><description><![CDATA[The Problem I have been a Redditor for over six years and was a “lurker” for a year before
 even creating my main account. During my time on…]]></description><link>https://cedric.tech/blog/reddits-save-functionality-sucks/</link><guid isPermaLink="false">https://cedric.tech/blog/reddits-save-functionality-sucks/</guid><pubDate>Mon, 04 Feb 2019 20:09:09 GMT</pubDate><content:encoded>&lt;h3&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;I have been a Redditor for over six years and was a “lurker” for a year before
 even creating my main account. During my time on Reddit, I have come across
@@ -19,7 +19,7 @@ following way:&lt;/p&gt;
 reached, older things are replaced and essentially deleted from history&lt;/li&gt;
 &lt;li&gt;saves are stored in reverse chronological order (latest to oldest) &lt;/li&gt;
 &lt;li&gt;no way whatsoever to filter or sort saved content&lt;/li&gt;
-&lt;li&gt;no searching capbility is provided&lt;/li&gt;
+&lt;li&gt;no searching capability is provided&lt;/li&gt;
 &lt;li&gt;pagination limit on Reddit site is limited to 25 items, thus requiring users
 to use the “Next Page” or “Prev Page” buttons a lot&lt;/li&gt;
 &lt;/ul&gt;
