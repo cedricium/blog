@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 06 Feb 2019 03:32:17 GMT</lastBuildDate><item><title><![CDATA[Reddit's Save Functionality Sucks]]></title><description><![CDATA[The Problem I have been a Redditor for over six years and was a “lurker” for a year before
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 17 Feb 2019 19:55:08 GMT</lastBuildDate><item><title><![CDATA[Ceddy Spaghetti Studios]]></title><description><![CDATA[An inside glimpse of my struggle with (unnecessarily) doing things by the book
+and how it plagues my ability to get anything done. I’m not…]]></description><link>https://cedric.tech/blog/ceddy-spaghetti-studios/</link><guid isPermaLink="false">https://cedric.tech/blog/ceddy-spaghetti-studios/</guid><pubDate>Sun, 17 Feb 2019 11:55:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;An inside glimpse of my struggle with (unnecessarily) doing things by the book
+and how it plagues my ability to get anything done.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’m not sure if there’s a word for this, but I enjoy doing things as real as
+possible; maybe better put, done by the book. It’s hard for me to articulate
+what exactly I mean by that, so for the purpose of this post, I’ll explain a
+simple example that I’ve come across recently.&lt;/p&gt;
+&lt;p&gt;Think of a website, any website. I just thought of Twitter. Now, visit the site
+in mind and locate the footer of the site. There you will most likely see multiple
+links, probably some about the product, the company, the legal things, etc. I
+would also bet there is a statement that looks something along the lines of:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;© &amp;lt;year&amp;gt; &amp;lt;company_name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Am I right? You may be wondering, “Why is Cedric writing about footer copyright
+notices?” Let me explain. My current side project is called unearth and recently
+I’ve been designing and coding the landing page. Now, when I got to the footer,
+&lt;em&gt;I wanted to do things as real as possible&lt;/em&gt; and decided to throw in the
+aforementioned copyright notice, to make things look legit, you know? This is
+the crazy part.&lt;/p&gt;
+&lt;p&gt;Initially, I put &lt;code class=&quot;language-text&quot;&gt;© 2019 Unearth&lt;/code&gt;. A few minutes later, I thought, “Is that even
+legal? What is Unearth, I don’t actually own a company by that name.”
+After spending a few more minutes looking for inspiration, I decided to change
+“Unearth” to “Unearth Labs” because that’s what Notion (&lt;a href=&quot;https://notion.so&quot;&gt;https://notion.so&lt;/a&gt;) did.&lt;/p&gt;
+&lt;p&gt;Any normal person would have left it at that and moved on with their life, but
+not me. Seeing the word “Unearth” repeated in the footer right below the logo
+wasn’t sitting right with me, so once again I procrastinated further and sought
+to fiddle with the copyright text more.&lt;/p&gt;
+&lt;p&gt;Then it occurred to me: I’ve gone through a similar struggle before with a previous
+side project. I went to the site and sure enough, there was some footer text
+(though not a copyright notice) that said, “An experiment by Ceddy Spaghetti
+Studios”. When building that previous project, I had seen one of my favorite
+makers do this on one of their projects so I thought it would be cool if I did
+so as well. I remember now sitting at my desk trying to come up with names of a
+fake company to use and ultimately choosing “Ceddy Spaghetti Studios”.&lt;/p&gt;
+&lt;p&gt;Upon this realization, I knew I had the text to complete the copyright notice
+for unearth’s footer. This, however, came at a cost: I just spent thirty minutes
+of my time which could’ve been spent going towards developing the core product.&lt;/p&gt;
+&lt;p&gt;Although this example may seem insignificant in of itself, these type of situations
+happen all the time when I’m building side projects. I battle with myself over
+the silliest decisions only to waste time and stall the development, and
+consequently, the launch of most of my projects. Due to this indecisiveness,
+more often than not, the side project will go unfinished.&lt;/p&gt;
+&lt;p&gt;I was originally going to write this post as a way of documenting and making
+Ceddy Spaghetti Studios “official” (insert Michael Scott declaring bankruptcy
+meme). But I guess this post also serves as a nice reminder and lesson to not
+sweat the small stuff and instead focus on what really needs to get done.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Reddit's Save Functionality Sucks]]></title><description><![CDATA[The Problem I have been a Redditor for over six years and was a “lurker” for a year before
 even creating my main account. During my time on…]]></description><link>https://cedric.tech/blog/reddits-save-functionality-sucks/</link><guid isPermaLink="false">https://cedric.tech/blog/reddits-save-functionality-sucks/</guid><pubDate>Mon, 04 Feb 2019 20:09:09 GMT</pubDate><content:encoded>&lt;h3&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;I have been a Redditor for over six years and was a “lurker” for a year before
 even creating my main account. During my time on Reddit, I have come across
