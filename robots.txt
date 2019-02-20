@@ -1,2 +1,5 @@
-User-agent: *
-Disallow:
+User-Agent: *
+Disallow: 
+
+Sitemap: https://cedric.tech/blog/sitemap.xml
+
