@@ -1,4 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Thu, 04 Apr 2019 19:19:38 GMT</lastBuildDate><item><title><![CDATA[On Side Project Addiction]]></title><description><![CDATA[tl;dr: since learning how to code, I’ve become obsessed with building things
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Thu, 09 May 2019 19:05:57 GMT</lastBuildDate><item><title><![CDATA[Setting Up Continuous Deployments (CD) for a React App using Netlify]]></title><description><![CDATA[A straightforward guide to setting up Continuous Deployment for a React app
+hosted on GitHub and deployed using Netlify. Background If you…]]></description><link>https://cedric.tech/blog/deploying-react-app-with-netlify/</link><guid isPermaLink="false">https://cedric.tech/blog/deploying-react-app-with-netlify/</guid><pubDate>Thu, 09 May 2019 12:30:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;A straightforward guide to setting up Continuous Deployment for a React app
+hosted on GitHub and deployed using Netlify.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;If you’re reading this, I assume you already know how awesome React.js is. With
+tools such as &lt;code class=&quot;language-text&quot;&gt;create-react-app&lt;/code&gt; to help scaffold a basic template in seconds,
+getting started with and building your own React apps couldn’t be any easier.&lt;/p&gt;
+&lt;p&gt;One aspect of working with modern web apps that can be confusing, however, is
+the deployment process; the steps needed in order to have your app accessible
+to everyone via the web.&lt;/p&gt;
+&lt;p&gt;This tutorial will walk you through setting up Continuous Deployments (CD) for
+a React app that has been bootstrapped with &lt;code class=&quot;language-text&quot;&gt;create-react-app&lt;/code&gt; using Netlify.&lt;/p&gt;
+&lt;p&gt;CD means a lot like what it sounds like, from Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a strategy for software releases wherein any code commit that passes the automated
+testing phase is automatically released into the production environment, making
+changes that are visible to the software’s users.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In researching how to deploy a React app myself, I came across numerous tutorials
+describing how to use Netlify’s drag-and-drop functionality or their CLI. These
+methods are certainly alright, however, any changes made to your application
+require you to repeat the same steps every time to have your deployed app updated.&lt;/p&gt;
+&lt;p&gt;With CD, your workflow as a developer doesn’t change minus the initial setup—make
+some code changes, commit and push said changes to GitHub, and voila, within
+moments your deployed React app should reflect the changes you have made.&lt;/p&gt;
+&lt;p&gt;Sounds great, huh? Trust me, it is. Let’s see how it’s done!&lt;/p&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;To keep this tutorial short and sweet, I’m going to assume a few things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;you have a React app handy which was bootstrapped using &lt;code class=&quot;language-text&quot;&gt;create-react-app&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;said React app is hosted on GitHub or a similar web-based version control
+hosting service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to just see how it’s done, I have
+&lt;a href=&quot;https://github.com/cedricium/netlify-cd-example&quot;&gt;setup a GitHub repository&lt;/a&gt; which
+you can fork and toy with as you follow along.&lt;/p&gt;
+&lt;p&gt;If at any point you do run into trouble, feel free to contact me and I’d be happy
+to help you out.&lt;/p&gt;
+&lt;h2&gt;Netlify Deployments&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Log in or Sign up with Netlify&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Since you have a GitHub account, this should be a breeze. Head over to
+&lt;a href=&quot;https://www.netlify.com/&quot;&gt;https://www.netlify.com/&lt;/a&gt; to get started. In the top right corner of their website,
+choose whatever option works best for you (either log in or sign up).&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Create a New site from git&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We have our amazing React app and want to show it off to the world, right? This
+is the way it’s done. Once you’re logged in, there should be a green primary
+“New site from Git” button—click it.&lt;/p&gt;
+&lt;p&gt;Next, you should be asked to connect to a Git provider. In our case, it will be
+GitHub, however, you can also choose GitLab or BitBucket. Click the button
+corresponding to your Git provider.&lt;/p&gt;
+&lt;p&gt;Now you’ll need to choose which repository you want to link your site on Netlify.
+Depending on the settings you chose when authorizing Netlify to use your GitHub
+account, you may or may not see all of your repos. If that’s the case, scroll down
+to the button of the page and click the link embedded in the “Can’t see your repo
+here? Configure the Netlify app on GitHub.” text.&lt;/p&gt;
+&lt;p&gt;Once you’ve selected the repo to link the Netlify site to, you should arrive at
+the “Deploy settings for &amp;#x3C;your-username&gt;/&amp;#x3C;your-repo&gt;” page.&lt;/p&gt;
+&lt;p&gt;If your repo contains a &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt; and similar config files in the root
+directory, Netlify should have been able to figure out this was a React app and
+pre-filled the “Basic build settings” such as “Build command” and
+“Publish directory”. If that’s your case then all you need to do is click the
+“Deploy site” button.&lt;/p&gt;
+&lt;p&gt;Otherwise, if your repo uses an unconventional directory structure, move on to
+the next section (looking at you Lambda School people). Don’t worry about filling
+out the “Basic build settings” inputs for now.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Optionally: Advanced site settings&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So, maybe your React app is nested inside a directory or two. Have no fear, this
+poses no problem for us. For now, go ahead and click the “Deploy site” button.&lt;/p&gt;
+&lt;p&gt;You will be directed to the main dashboard for your Netlify site. If you check
+the url provided for your deployed site, you should be given a “Page Not Found”
+error; that’s to be expected since we didn’t specify where Netlify could find the
+built React app.&lt;/p&gt;
+&lt;p&gt;Find and click “Site settings” from the main dashboard, then select “Build &amp;#x26; deploy”
+from the sidebar.&lt;/p&gt;
+&lt;p&gt;Under “Build settings”, lets fill out as much as we can by first selecting “Edit
+settings”.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Repository:&lt;/strong&gt; this should already be defined, so no need to change anything&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Base directory:&lt;/strong&gt; think of this as the root directory of the React app. For
+example, given the repo structure below, our base directory would be &lt;code class=&quot;language-text&quot;&gt;nested&lt;/code&gt;.
+If your React app is further nested, you can use &lt;code class=&quot;language-text&quot;&gt;as/many/nests/as/possible&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;netlify-cd-example/
+    .gitignore
+    README.md
+    nested/
+        README.md
+        package.json
+        yarn.lock
+        public/
+            index.html
+            ...
+        src/
+            App.js
+            ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Build command:&lt;/strong&gt; this is the command Netlify uses to well, build our site. In
+case of a React app configured using &lt;code class=&quot;language-text&quot;&gt;create-react-app&lt;/code&gt;, we would type &lt;code class=&quot;language-text&quot;&gt;yarn
+build&lt;/code&gt; here.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Publish directory:&lt;/strong&gt; this is the directory from which Netlify actually
+serves the built static content. The path from your “Base directory” should
+already be filled in, so all we need to add for a React app is &lt;code class=&quot;language-text&quot;&gt;build&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy log visibility:&lt;/strong&gt; fairly self-explanatory, select whichever you want.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And that should be all that is needed to get our React app up and running. Verify
+your settings match your repo structure and then click “Save”.&lt;/p&gt;
+&lt;p&gt;Select “Deploys” in the top navbar of your dashboard, then under the “Trigger
+deploy” dropdown, select “Clear cache and deploy site”. Netlify’s robots will
+then start the process of building the React app and deploying it.&lt;/p&gt;
+&lt;p&gt;Barring any errors or issues, the deployment will be successful and you can now
+check out your live React site by clicking the “Preview deploy” link.&lt;/p&gt;
+&lt;p&gt;Cheers! You’ve just deployed your React app. Now any changes you make to the
+production branch (default is &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; but can be changed under “Settings &gt;
+Build &amp;#x26; deploy &gt; Deploy contexts &gt; Production branch”) will trigger Netlify
+bots to auto-build your React app and keep it updated.&lt;/p&gt;
+&lt;h2&gt;Caveats &amp;#x26; More&lt;/h2&gt;
+&lt;h3&gt;Netlify + React Router&lt;/h3&gt;
+&lt;p&gt;If your React application is using the popular &lt;code class=&quot;language-text&quot;&gt;react-router&lt;/code&gt; package, the above
+settings may not work out of the box. There is some additional setup needed for
+routing to work when deploying a React using Netlify—the article
+&lt;a href=&quot;https://medium.com/@sschannaknetlify-and-react-router-1537aebe6256&quot;&gt;&lt;em&gt;Netlify and React Router&lt;/em&gt;&lt;/a&gt;
+should put you in the right direction.&lt;/p&gt;
+&lt;h3&gt;Advanced Configuration&lt;/h3&gt;
+&lt;p&gt;For those of you who like config files, all of the Netlify GUI steps outlined in
+this article can be done by specifying the proper values in a &lt;code class=&quot;language-text&quot;&gt;netlify.toml&lt;/code&gt; file
+which must reside in the repository’s root directory.&lt;/p&gt;
+&lt;p&gt;To learn more about configuring a Netlify site using the &lt;code class=&quot;language-text&quot;&gt;netlify.toml&lt;/code&gt; file, check
+out &lt;a href=&quot;https://www.netlify.com/docs/netlify-toml-reference&quot;&gt;the official Netlify docs&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[On Side Project Addiction]]></title><description><![CDATA[tl;dr: since learning how to code, I’ve become obsessed with building things
 with the end-goal of making something worthy enough of landing…]]></description><link>https://cedric.tech/blog/side-project-addiction/</link><guid isPermaLink="false">https://cedric.tech/blog/side-project-addiction/</guid><pubDate>Thu, 04 Apr 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;tl;dr: since learning how to code, I’ve become obsessed with building things
 with the end-goal of making something worthy enough of landing me a job as a
 developer.&lt;/strong&gt;&lt;/p&gt;
