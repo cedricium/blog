@@ -1,11 +1,11 @@
 ---
 title: "Express: Accessing `req.params` in nested/child routers"
-date: "2019-07-28T12:00:00.000Z"
-draft: true
+date: "2019-07-28T10:35:00.000Z"
+draft: false
 ---
 
 This past week marks the beginning of the backend portion of my studies at Lambda
-School, which means I am approximately a third of the way complete with the
+School, which means I am approximately a fourth of the way complete with the
 program! During the frontend portion, we took a deep dive into JavaScript
 fundamentals before moving onto React.js and the Single Page Application ecosystem.
 Now on the backend, my peers and I are utilizing our JavaScript chops to build
@@ -14,15 +14,16 @@ RESTful APIs using Node.js and Express.
 One week in and I already found myself dealing with an interesting issue. Allow
 me to provide some background information.
 
+
 ## Background
 
-The task at hand was to utilize Express in order to build a REST API. This backend
-could be thought of as handling a blog, where there are `Posts` and `Comments`
-models. Another requirement of the project was to use an Express `Router` object
-in order to separate and organize the various routes to be defined.
+The task at hand was to utilize Express to build a REST API. You can think of
+this backend server as handling a blog, where there are `Posts` and `Comments`
+models. Another requirement of this project was to use an Express `Router` object
+to separate and organize the various routes needing implementation later on.
 
-My first order of business was to create a `posts` router in order to handle
-HTTP requests on the `/api/posts` route:
+My first order of business was to create a `posts` router to handle HTTP requests
+on the `/api/posts` route:
 
 ```js
 /* routes/posts/index.js */
@@ -46,7 +47,7 @@ server.use('/api/posts', postsRouter)
 ```
 
 Though not required, I thought it best to also separate the comments from the
-posts, so I defined a second router specifically for the `comments`:
+posts, so I defined a second router for the `comments`:
 
 ```js
 /* routes/comments/index.js */
@@ -84,21 +85,21 @@ commentsRouter.get('/', async (req, res) => {
 ...
 ```
 
-After a little debugging and googling, I discovered that by default, Express
+After a little debugging and googling, I discovered that by default Express
 does not pass the `req.params` to child routers. Because the line:
 
 ```js
 postsRouter.use('/:id/comments', commentsRouter)
 ```
 
-was defined in `routes/posts/index.js`, the `commentsRouter` could not access
+was defined in `routes/posts/index.js`, `commentsRouter` could not access
 that post `id`.
 
-My first naive solution was to then eliminate the `commentsRouter` entirely and
-move all of its route handlers to the `postsRouter`, effectively giving the
-`commentsRouter` access to `req.params` by virtue of being in the same scope as
-its parent path (`/api/posts/:id`). Like I said, however, that would be naive and
-I assumed there was a better solution to this. And there was.
+Initially, I thought to eliminate `commentsRouter` entirely and move all of its
+route handlers to `postsRouter`. This would effectively give `commentsRouter`
+access to all `req.params` by being in the same scope as its parent path
+(`/api/posts/:id`). This, however, seemed like a naive fix to the problem and I
+felt as though there was a better solution. And there was.
 
 
 ## Solution
@@ -114,7 +115,7 @@ To my excitement, this property (set by default to `false`) does the following:
 > child have conflicting param names, the child’s value take precedence.
 
 To put that into context, by setting that property to `true`, I could then keep
-my `postsRouter` and `commentsRouter` separated **and** access the post `id`
+my `postsRouter` and `commentsRouter` separated *and* access the post `id`
 in `commentsRouter` via `req.params`. That was it, just the fix I needed!
 
 One small addition to the code and my original setup now works:
@@ -133,6 +134,7 @@ commentsRouter.get('/', async (req, res) => {
 
 If you would like to get a better understanding of what's going behind the scenes
 or you just want to see the code, feel free to check it out on GitHub.<sup>2</sup>
+
 It's being able to solve little problems like this that motivate me to keep
 coding. No matter how big or small the victory, I will always be proud of myself
 and I look forward to tackling the next one.
