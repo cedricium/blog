@@ -1,4 +1,114 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Thu, 09 May 2019 19:05:57 GMT</lastBuildDate><item><title><![CDATA[Setting Up Continuous Deployments (CD) for a React App using Netlify]]></title><description><![CDATA[A straightforward guide to setting up Continuous Deployment for a React app
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 28 Jul 2019 17:34:56 GMT</lastBuildDate><item><title><![CDATA[Express: Accessing `req.params` in nested/child routers]]></title><description><![CDATA[This past week marks the beginning of the backend portion of my studies at Lambda
+School, which means I am approximately a fourth of the way…]]></description><link>https://cedric.tech/blog/expressjs-accessing-req-params-from-child-routers/</link><guid isPermaLink="false">https://cedric.tech/blog/expressjs-accessing-req-params-from-child-routers/</guid><pubDate>Sun, 28 Jul 2019 10:35:00 GMT</pubDate><content:encoded>&lt;p&gt;This past week marks the beginning of the backend portion of my studies at Lambda
+School, which means I am approximately a fourth of the way complete with the
+program! During the frontend portion, we took a deep dive into JavaScript
+fundamentals before moving onto React.js and the Single Page Application ecosystem.
+Now on the backend, my peers and I are utilizing our JavaScript chops to build
+RESTful APIs using Node.js and Express. &lt;/p&gt;
+&lt;p&gt;One week in and I already found myself dealing with an interesting issue. Allow
+me to provide some background information.&lt;/p&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;The task at hand was to utilize Express to build a REST API. You can think of
+this backend server as handling a blog, where there are &lt;code class=&quot;language-text&quot;&gt;Posts&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;Comments&lt;/code&gt;
+models. Another requirement of this project was to use an Express &lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; object
+to separate and organize the various routes needing implementation later on.&lt;/p&gt;
+&lt;p&gt;My first order of business was to create a &lt;code class=&quot;language-text&quot;&gt;posts&lt;/code&gt; router to handle HTTP requests
+on the &lt;code class=&quot;language-text&quot;&gt;/api/posts&lt;/code&gt; route:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/posts/index.js */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+postsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; postsRouter
+
+
+&lt;span class=&quot;token comment&quot;&gt;/* server.js */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; express &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; server &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./routes/posts&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+server&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/api/posts&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; postsRouter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Though not required, I thought it best to also separate the comments from the
+posts, so I defined a second router for the &lt;code class=&quot;language-text&quot;&gt;comments&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/comments/index.js */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; commentsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; commentsRouter
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/* routes/posts/index.js */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; commentsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./routes/comments&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+postsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/:id/comments&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;As you can see, any CRUD operations on &lt;code class=&quot;language-text&quot;&gt;comments&lt;/code&gt; would need to be handled via
+the &lt;code class=&quot;language-text&quot;&gt;/api/posts/:id/comments&lt;/code&gt; route, thus relying on a specific post &lt;code class=&quot;language-text&quot;&gt;id&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The issue I ran into was when I attempted to read the &lt;code class=&quot;language-text&quot;&gt;req.params.id&lt;/code&gt; from the
+nested/child comments router, I was met with &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/comments/index.js */&lt;/span&gt;
+
+commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;params&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id  &lt;span class=&quot;token comment&quot;&gt;// ==&gt; would return `undefined`&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After a little debugging and googling, I discovered that by default Express
+does not pass the &lt;code class=&quot;language-text&quot;&gt;req.params&lt;/code&gt; to child routers. Because the line:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;postsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/:id/comments&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;was defined in &lt;code class=&quot;language-text&quot;&gt;routes/posts/index.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;commentsRouter&lt;/code&gt; could not access
+that post &lt;code class=&quot;language-text&quot;&gt;id&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Initially, I thought to eliminate &lt;code class=&quot;language-text&quot;&gt;commentsRouter&lt;/code&gt; entirely and move all of its
+route handlers to &lt;code class=&quot;language-text&quot;&gt;postsRouter&lt;/code&gt;. This would effectively give &lt;code class=&quot;language-text&quot;&gt;commentsRouter&lt;/code&gt;
+access to all &lt;code class=&quot;language-text&quot;&gt;req.params&lt;/code&gt; by being in the same scope as its parent path
+(&lt;code class=&quot;language-text&quot;&gt;/api/posts/:id&lt;/code&gt;). This, however, seemed like a naive fix to the problem and I
+felt as though there was a better solution. And there was.&lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;When researching a fix for this issue, my attention was brought to the Express
+&lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; documentation.&lt;sup&gt;1&lt;/sup&gt; There, I saw that the &lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; instantiation
+method documented a property of the optional &lt;code class=&quot;language-text&quot;&gt;options&lt;/code&gt; parameter, a little
+something named &lt;code class=&quot;language-text&quot;&gt;mergeParams&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To my excitement, this property (set by default to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;) does the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Preserve the req.params values from the parent router. If the parent and the
+child have conflicting param names, the child’s value take precedence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To put that into context, by setting that property to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, I could then keep
+my &lt;code class=&quot;language-text&quot;&gt;postsRouter&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;commentsRouter&lt;/code&gt; separated &lt;em&gt;and&lt;/em&gt; access the post &lt;code class=&quot;language-text&quot;&gt;id&lt;/code&gt;
+in &lt;code class=&quot;language-text&quot;&gt;commentsRouter&lt;/code&gt; via &lt;code class=&quot;language-text&quot;&gt;req.params&lt;/code&gt;. That was it, just the fix I needed!&lt;/p&gt;
+&lt;p&gt;One small addition to the code and my original setup now works:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/comments/index.js */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; commentsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; mergeParams&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+           &lt;span class=&quot;token comment&quot;&gt;// note the addition of `mergeParams` ^^^^^^^^^^^^^^^^^^^^^&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+
+commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;params&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id  &lt;span class=&quot;token comment&quot;&gt;// ==&gt; this now works 🎉&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you would like to get a better understanding of what’s going behind the scenes
+or you just want to see the code, feel free to check it out on GitHub.&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;It’s being able to solve little problems like this that motivate me to keep
+coding. No matter how big or small the victory, I will always be proud of myself
+and I look forward to tackling the next one.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Express &lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; instantiation documentation:
+&lt;a href=&quot;https://expressjs.com/en/4x/api.html#express.router&quot;&gt;https://expressjs.com/en/4x/api.html#express.router&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example code on GitHub:
+&lt;a href=&quot;https://github.com/cedricium/webapi-ii-challenge/tree/cedric-amaya&quot;&gt;https://github.com/cedricium/webapi-ii-challenge/tree/cedric-amaya&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Setting Up Continuous Deployments (CD) for a React App using Netlify]]></title><description><![CDATA[A straightforward guide to setting up Continuous Deployment for a React app
 hosted on GitHub and deployed using Netlify. Background If you…]]></description><link>https://cedric.tech/blog/deploying-react-app-with-netlify/</link><guid isPermaLink="false">https://cedric.tech/blog/deploying-react-app-with-netlify/</guid><pubDate>Thu, 09 May 2019 12:30:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;A straightforward guide to setting up Continuous Deployment for a React app
 hosted on GitHub and deployed using Netlify.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Background&lt;/h2&gt;
