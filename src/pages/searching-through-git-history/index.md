@@ -53,5 +53,5 @@ $ git log -S "reports-get-manifest-error" -- src/controllers/policy-evaluation.j
 ```
 
 After running this command, I was presented with two commits: one where the
-"reports-get-manifest-error" event was originally implemented/introduced in the codebase, and the other where it
-was removed.
+"reports-get-manifest-error" event was originally implemented/introduced in the codebase,
+and the other where it was removed.
