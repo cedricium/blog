@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Tue, 13 Aug 2019 01:18:37 GMT</lastBuildDate><item><title><![CDATA[Express: Accessing `req.params` in nested/child routers]]></title><description><![CDATA[This past week marks the beginning of the backend portion of my studies at Lambda
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Dec 2019 06:13:46 GMT</lastBuildDate><item><title><![CDATA[Express: Accessing `req.params` in nested/child routers]]></title><description><![CDATA[This past week marks the beginning of the backend portion of my studies at Lambda
 School, which means I am approximately a fourth of the way…]]></description><link>https://cedric.tech/blog/expressjs-accessing-req-params-from-child-routers/</link><guid isPermaLink="false">https://cedric.tech/blog/expressjs-accessing-req-params-from-child-routers/</guid><pubDate>Sun, 28 Jul 2019 10:35:00 GMT</pubDate><content:encoded>&lt;p&gt;This past week marks the beginning of the backend portion of my studies at Lambda
 School, which means I am approximately a fourth of the way complete with the
 program! During the frontend portion, we took a deep dive into JavaScript
@@ -485,87 +485,7 @@ access&lt;/strong&gt; once it’s ready? &lt;strong&gt;Sign up for the unearth m
     &lt;/div&gt;
   &lt;/form&gt;
 &lt;/div&gt;
-&lt;!--End mc_embed_signup--&gt;</content:encoded></item><item><title><![CDATA[I'm a College Dropout]]></title><description><![CDATA[I have never been an amazing student. I hardly study, consistently skip class,
-and often drop courses just to lighten my course load…]]></description><link>https://cedric.tech/blog/dropping-out-of-school/</link><guid isPermaLink="false">https://cedric.tech/blog/dropping-out-of-school/</guid><pubDate>Wed, 09 Jan 2019 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I have never been an amazing student. I hardly study, consistently skip class,
-and often drop courses just to lighten my course load. Because of this seemingly
-lazy behavior, I have been attending community college for nearly 3 years and
-probably have at least another year before I can even think of transferring.&lt;/p&gt;
-&lt;p&gt;Now before you write me off as a complete degenerate, let me explain why I do so
-poorly. If I had to guess, you’re probably thinking I’m spending all my time
-playing video games or dealing with difficult situation, but none of that is
-true. Rather, I spend my free time (and the time I should be doing schoolwork)
-working on side projects, programming whatever I think would be a neat
-endeavor to tackle.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;not many ppl know this about me&lt;/li&gt;
-&lt;li&gt;programming is almost addictive&lt;/li&gt;
-&lt;li&gt;dramatic about academic performance (mention 2.99 GPA), but definitely not
-comfortable with the rate of progress I’m making&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;..segways into…&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;not wanting to be in school for another 3+ years&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;feeling stuck and the need to become independent / responsible for myself&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;mention how I’ve felt like a caged bird, only to be freed once I made the
-decision&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;dear friends and family might think I’m making a mistake, so explain my plan:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;introduce Lambda School and how I heard about it&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;reddit AMA with Austen (show screenshots of PMs)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;briefly discuss their curriculum / course offering, tuition strategies, etc.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;what I’m going to do:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;continue working part-time&lt;/li&gt;
-&lt;li&gt;enroll in LS part-time in Spring 2019&lt;/li&gt;
-&lt;li&gt;all goes well, graduate in Spring/Summer 2020 and start job hunt (full-time
-software dev positions!)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;reiterate that I have no personal quarrel w/ higher-education (besides the
-ridiculous cost) and I do plan on finishing my degree someday&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;thank those close to me for being supportive and understanding as I begin this
-journey / new chapter in my life&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;revisiting:&lt;/p&gt;
-&lt;p&gt;[interesting hook story about school]&lt;/p&gt;
-&lt;p&gt;[time at ASU; improvements made at Foothill] - brief]&lt;/p&gt;
-&lt;p&gt;[time realization within the next year]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;parents moving&lt;/li&gt;
-&lt;li&gt;Momo transferring&lt;/li&gt;
-&lt;li&gt;nowhere near ready to transfer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[introduce Lambda School; how I first heard about it (reddit)]&lt;/p&gt;
-&lt;p&gt;[why lambda]
-tbh, didn’t really look into any other bootcamps, however, Lambda right off the
-bat is perfect for my needs&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;deferred payments (“being a broke college student w/ less than $1000 to his name…)&lt;/li&gt;
-&lt;li&gt;part-time &lt;/li&gt;
-&lt;li&gt;remote&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[wasn’t sure what “school isn’t right for everyone” meant until I looked back
-at my time in college]&lt;/p&gt;
-&lt;p&gt;[Lmabda starts Feb. 25, super stoked]&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Self Reflection]]></title><description><![CDATA[This piece was originally going to be called “Why I Write”. For better or worse
+&lt;!--End mc_embed_signup--&gt;</content:encoded></item><item><title><![CDATA[Self Reflection]]></title><description><![CDATA[This piece was originally going to be called “Why I Write”. For better or worse
 (and advised as okay by Paul Graham), I’ve since pivoted the…]]></description><link>https://cedric.tech/blog/self-reflection/</link><guid isPermaLink="false">https://cedric.tech/blog/self-reflection/</guid><pubDate>Fri, 21 Dec 2018 00:53:55 GMT</pubDate><content:encoded>&lt;p&gt;This piece was originally going to be called “Why I Write”. For better or worse
 (and advised as okay by Paul Graham), I’ve since pivoted the main topic of this
 post to instead focus more generally on my motivation to create—be it via
