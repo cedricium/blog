@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Dec 2019 06:13:46 GMT</lastBuildDate><item><title><![CDATA[Express: Accessing `req.params` in nested/child routers]]></title><description><![CDATA[This past week marks the beginning of the backend portion of my studies at Lambda
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Dec 2019 06:16:24 GMT</lastBuildDate><item><title><![CDATA[Searching Git History]]></title><description><![CDATA[tl;dr When you need to see when a specific piece of code was introduced or deleted in your
+codebase, use the following command: Problem A…]]></description><link>https://cedric.tech/blog/searching-git-history/</link><guid isPermaLink="false">https://cedric.tech/blog/searching-git-history/</guid><pubDate>Tue, 24 Dec 2019 21:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;tl;dr&lt;/h2&gt;
+&lt;p&gt;When you need to see when a specific piece of code was introduced or deleted in your
+codebase, use the following command:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git log -S&amp;lt;string&amp;gt; [&amp;lt;options&amp;gt; [-- &amp;lt;path&amp;gt;…]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;A few times a month, a coworker of mine will ask to see what the code for a given
+event does (they do not have access to our company’s GitHub repos). This particular
+coworker is the company’s go-to person for all things related to Splunk since they
+manage the graphs and create queries based on the data coming in from our service.
+Having an idea of what the code does for any given event is helpful when
+debugging—thus the reason they ask to see the code.&lt;/p&gt;
+&lt;p&gt;We always begin by using GitHub’s search functionality and search for the event
+by its name (e.g. “reports-get-manifest-error”). Usually this will show us the
+relevant parts of the code like where this event was defined and where it is
+handled.&lt;/p&gt;
+&lt;p&gt;Recently, however, searching for a specific result on GitHub yielded no results.
+Strange—that had never happened before.&lt;/p&gt;
+&lt;p&gt;The last time that particular event was triggered was two years ago, so we thought
+it was definitely possible the event was removed from the code since then. Although
+my coworker had no need to investigate further, I was curious as to when this event
+became deprecated. So I did what I do best when I don’t know something and turned
+to Google. I don’t remember what exactly I googled but it must have been something
+along the lines of “git search deleted code”, and sure enough, &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; did in fact have
+this very capability.&lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;In order to see when some particular code is added or removed, you can use the &lt;code class=&quot;language-text&quot;&gt;git log&lt;/code&gt;
+command. Specifically, you will want to pass the &lt;code class=&quot;language-text&quot;&gt;-S &amp;lt;string&amp;gt;&lt;/code&gt; flag which tells git
+to “look for differences that introduce or remove an instance of string.”&lt;sup&gt;1&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Given the dilemma outlined above, what I did was use the &lt;code class=&quot;language-text&quot;&gt;git log&lt;/code&gt; command along with
+the event passed to the &lt;code class=&quot;language-text&quot;&gt;-S&lt;/code&gt; flag (I also added the path to the file where the
+event should have been):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git log -S &amp;quot;reports-get-manifest-error&amp;quot; -- src/controllers/policy-evaluation.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After running this command, I was presented with two commits: one where the
+“reports-get-manifest-error” event was originally introduced in the codebase,
+and the other where it was removed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;git log -S&amp;lt;string&amp;gt;&lt;/code&gt; documentation:
+&lt;a href=&quot;https://git-scm.com/docs/git-log#Documentation/git-log.txt--Sltstringgt&quot;&gt;https://git-scm.com/docs/git-log#Documentation/git-log.txt—Sltstringgt&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Express: Accessing `req.params` in nested/child routers]]></title><description><![CDATA[This past week marks the beginning of the backend portion of my studies at Lambda
 School, which means I am approximately a fourth of the way…]]></description><link>https://cedric.tech/blog/expressjs-accessing-req-params-from-child-routers/</link><guid isPermaLink="false">https://cedric.tech/blog/expressjs-accessing-req-params-from-child-routers/</guid><pubDate>Sun, 28 Jul 2019 10:35:00 GMT</pubDate><content:encoded>&lt;p&gt;This past week marks the beginning of the backend portion of my studies at Lambda
 School, which means I am approximately a fourth of the way complete with the
 program! During the frontend portion, we took a deep dive into JavaScript
