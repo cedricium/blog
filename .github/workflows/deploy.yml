@@ -25,6 +25,6 @@ jobs:
       - run: npm install -g yarn
       - run: yarn install
       - run: |
-          git config user.email "amaya.cedric@gmail.com"
-          git config user.name "Cedric Amaya"
-      - run: yarn deploy
+          git config --global user.email "amaya.cedric@gmail.com"
+          git config --global user.name "Cedric Amaya"
+          yarn deploy
