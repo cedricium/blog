@@ -43,7 +43,7 @@ module.exports = {
       options: {
         trackingId: `UA-84282487-5`,
         respectDNT: true,
-        exclude: ["/rss.xml"],
+        exclude: ['/rss.xml'],
       },
     },
     `gatsby-plugin-feed`,
@@ -67,5 +67,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
