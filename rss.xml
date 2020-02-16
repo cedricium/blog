@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 10 Feb 2020 23:21:26 GMT</lastBuildDate><item><title><![CDATA[Just Do It]]></title><description><![CDATA[I’m naturally a very reserved person. Like many introverts, I steer clear of
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Feb 2020 23:07:53 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #01: What Is It]]></title><description><![CDATA[This is the first article in a series of articles where I discuss my long-time
+side project, Unearth. Topics will include the motivation…]]></description><link>https://cedric.tech/blog/unearth-diary-01-what-is-it/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-01-what-is-it/</guid><pubDate>Sun, 16 Feb 2020 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the first article in a series of articles where I discuss my long-time
+side project, Unearth. Topics will include the motivation behind building Unearth,
+what it is, how it works, and the technology behind it to name a few. Check back
+often for future updates.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Too Much Content, Too Little Time&lt;/h3&gt;
+&lt;p&gt;Many Redditors, myself included, like to save posts and comments that make us a
+feel some type a way. Whether it’s a funny meme, a recipe for a delicious meal,
+or an in-depth programming tutorial, we don’t always have the time to act on the
+media we consume. So, with good intentions, we save it for later. The problem
+is: later never comes. Consumption of media has become an all-consuming act and
+rarely do we remember to go back and look at our saved things with what little
+time we have on our hands.&lt;/p&gt;
+&lt;p&gt;That’s when I thought: maybe all we need is a simple nudge or reminder every so
+often that surfaces the content for us, similar to Timehop.&lt;/p&gt;
+&lt;p&gt;My solution to this issue of rediscovering saved content is (what I think is
+aptly named) Unearth. It’s a service that sends users a personalized newsletter
+with a handful of their Reddit saves at the frequency of their choice. No longer
+can we place the blame on our forgetfulness—with Unearth, we can be shown some
+of our Reddit saves as frequently as every day.&lt;/p&gt;
+&lt;div&gt;
+&lt;a href=&quot;https://www.tryunearth.com&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 54.305555555555564%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABwklEQVQoz12STW7bMBCFCfh8/dm1tpt9ztBl971B2gN0UcCbLrxyDPQMtSU5sYEG3siVZEmkSFF6naHISAmBB9EG5uObeSOqqsL5fMbfpyc0eQr0Hfq+H2UN+LTfbqHfCTTLGeRHgZrULuj3XECRNN3tUkAopXC9XpHnOVVpvD5ToHpLhZ8IOB9B/DUE65Ye2DQNyrLE8K3cvSgKZFkGay1gWwfUBKzeUNHNzLlhh86ZB2oPF6fTCev1GpvNBqvVCtvtFvf3W0T7PT1Cjjv7wiG33MxHAItHIP0DIk1TV7wn7XZ/kCSJ0+uWjQcaaplnN4VoP0N2Ki6XC/ZRhMfHIwF3iOiexAmOxxO6rntuOYTS3gyhhBkq33J4ROR5hpjcJTFBHx4QxzEOhwP4IeewHRxaAhoCSmpZTZINSXMoFQP76Df6H5/R//wC/PqKqsiQXv651KdrY7/fQvqUAzAkG8CuZXCBrmlI0onbDDvojg+FZyh9KNIHEcJREwlLgMa0UJSo0saBeIW01k6NrMHbqe9GIDvplwOg/DC0GkISxhjUdQ1ecAaww4r2kf+TUqIuC0g2Si2376l4MYP1e/ec8mLUf41nqC18dXnoAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Unearth homepage&quot; title=&quot;&quot; src=&quot;/blog/static/7386160fac84e67e0a75aa1d14282c2f/b9e4f/unearth-homepage.png&quot; srcset=&quot;/blog/static/7386160fac84e67e0a75aa1d14282c2f/cf440/unearth-homepage.png 148w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/d2d38/unearth-homepage.png 295w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/b9e4f/unearth-homepage.png 590w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/f9b6a/unearth-homepage.png 885w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/2d849/unearth-homepage.png 1180w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/8d0ff/unearth-homepage.png 1440w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+&lt;/a&gt;
+&lt;center&gt;
+  &lt;small&gt;Screenshot of the Unearth homepage.&lt;/small&gt;
+&lt;/center&gt;
+&lt;/div&gt;
+&lt;h3&gt;Why Reddit&lt;/h3&gt;
+&lt;p&gt;There are a couple reasons why Reddit was chosen as the initial platform to
+surface saved content. For starters, I, myself, am a Redditor and have saved
+over 800 items since joining the site seven years ago. The second reason is due
+to Reddit’s own technical limitations. It’s widely known yet not totally
+understood that only the most recent thousand saved items can be accessed/viewed.
+Once you go past those thousand items, the oldest content disappears in order
+to make space for the newer saves.&lt;/p&gt;
+&lt;p&gt;A majority of the content I save could be beneficial for me at some point in my
+life, however, even I know I don’t need all of those saved things. So Unearth’s
+purpose is two-fold: not only does it surface content frequently for you, but
+it also helps you manage your saved things by encouraging you to unsave unneeded
+content.&lt;/p&gt;
+&lt;p&gt;Although Reddit was initially chosen, the great thing about Unearth is that its
+core functionality can be extended to many different platforms or services which
+offer access to users’ data. Since showing off Unearth to a handful of people,
+I’ve already had people ask me to extend this to sites like Twitter, Facebook,
+and Hacker News in order to surface their likes and bookmarks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If Unearth sounds like something you would find useful,
+&lt;a href=&quot;https://www.tryunearth.com/&quot;&gt;sign up today and give it try&lt;/a&gt;. I would love to
+hear your thoughts about the service and any other questions or comments you may
+have.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Just Do It]]></title><description><![CDATA[I’m naturally a very reserved person. Like many introverts, I steer clear of
 confrontation and rarely do I post anything intimate on social…]]></description><link>https://cedric.tech/blog/just-do-it/</link><guid isPermaLink="false">https://cedric.tech/blog/just-do-it/</guid><pubDate>Mon, 10 Feb 2020 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’m naturally a very reserved person. Like many introverts, I steer clear of
 confrontation and rarely do I post anything intimate on social media. As much as
 I hate to admit it, I also fear criticism and find it hard to differentiate a
