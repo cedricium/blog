@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Feb 2020 23:07:53 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #01: What Is It]]></title><description><![CDATA[This is the first article in a series of articles where I discuss my long-time
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Tue, 18 Feb 2020 20:18:21 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #02: How Does It Work]]></title><description><![CDATA[This is the second in a series of articles where I discuss my long-time side
+project, Unearth. Topics will include the motivation behind…]]></description><link>https://cedric.tech/blog/unearth-diary-02-how-does-it-work/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-02-how-does-it-work/</guid><pubDate>Tue, 18 Feb 2020 12:15:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the second in a series of articles where I discuss my long-time side
+project, Unearth. Topics will include the motivation behind building Unearth,
+what it is, how it works, and the technology powering the service to name a few.
+Check back often for future updates.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Unearth is a service that sends users a personalized newsletter with a handful
+of their Reddit saves at the frequency of their choice.
+&lt;a href=&quot;../unearth-diary-01-what-is-it&quot;&gt;Read the first article&lt;/a&gt;
+in this series to get a better understanding of what Unearth is.&lt;/p&gt;
+&lt;p&gt;New users can join by visiting the Unearth homepage:
+&lt;a href=&quot;https://www.tryunearth.com&quot;&gt;www.tryunearth.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From there, signing up is as simple as clicking the “Get Started” button. This
+authenticates users via Reddit using the OAuth 2 protocol and authorizes Unearth
+to use their Reddit information (namely, their Reddit id, username, and saved
+things).&lt;/p&gt;
+&lt;p&gt;Assuming they’ve never joined Unearth before, users are then walked through a
+simple three-step onboarding process. This consists of gathering their email,
+preferred frequency for newsletters (daily, weekly, or monthly), and finally,
+syncing their Reddit saves with Unearth. Even with a thousand saved items, this
+entire process is very quick, usually taking less than a minute.&lt;/p&gt;
+&lt;p&gt;Once onboarding is complete, users are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sent their first Unearth newsletter containing five of their saved things&lt;/li&gt;
+&lt;li&gt;displayed the date of their first scheduled newsletter&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From this point on, users do not need to do anything else. Depending on the
+preferred frequency, they will either receive their scheduled newsletters every
+day, every Monday, or every 15th of the month. Again, these Unearth newsletters
+are personalized, containing only links that they themselves have saved.&lt;/p&gt;
+&lt;p&gt;If a user would like to update their email or frequency preference or delete
+their account and all associated data entirely, they can do so by visiting the
+Account page.&lt;/p&gt;
+&lt;div&gt;
+    
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/b12db/account-page.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 68.30985915492958%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABZklEQVQ4y6VSWWrDMBDV/U+RKwTav9BCjlA31IUQpzE0dRYvkmU7lq3XGdnZaKFxI3jM/jQjjQgWC3ieh/l8jtnrDL7/jrqu0TQNSQNjzmD/yf5F5xpRFCWyLIOUCkmSII5jpEnqfGwznE5+jrGepmmXR/KsZ1BKQWxkjmi9RhRFrljnmsglJBXmee7AiYxckU4XOx9JRXns17qrYb/Q1cEFuNPWWlgAbWt7tGh6HO3LmJO2s485YrvbYRkskXJX1J0uSxhHYm+GYWk7KTIa44tGDsMQ4WqF/X7vbu+OxZDD3QpJc283m6uA5dEH4kSY0OP7/ptbicvgpf7XuSKsiIhXQtHo/+nsR4cl/fKeRo4+19C0AvccJhbKNFjFCT4IcdOipsCBJX1M3QwA5XOdyF88xKMRyvEY5uERhhbWECmvjulX4lYwqaiCAMXzE+R0imwyQUFrc9fIFSmaIHsoetPTyAPBdd91fUUlrFjkRAAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Example Unearth Account page&quot; title=&quot;&quot; src=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/b9e4f/account-page.png&quot; srcset=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/cf440/account-page.png 148w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/d2d38/account-page.png 295w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/b9e4f/account-page.png 590w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/f9b6a/account-page.png 885w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/b12db/account-page.png 994w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;center&gt;
+    &lt;small&gt;Screenshot of the Account page.&lt;/small&gt;
+  &lt;/center&gt;
+&lt;/div&gt;
+&lt;p&gt;The main focus of Unearth is tackling the issue of rediscovering and managing
+saved content. As such, the current features may seem minimal but they are doing
+the trick.&lt;/p&gt;
+&lt;p&gt;Potential features to come:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;unsaving things automatically, either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;when clicking a link in the newsletter&lt;/li&gt;
+&lt;li&gt;when the thing itself is surfaced (added to a newsletter)&lt;/li&gt;
+&lt;li&gt;never (manual unsave via Reddit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;newsletter previewer (to see the below email options):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;include thumbnails&lt;/li&gt;
+&lt;li&gt;show/hide Reddit post self-text&lt;/li&gt;
+&lt;li&gt;show/hide nsfw content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;browser-viewable emails/newsletter&lt;/li&gt;
+&lt;li&gt;browser extensions of Unearth to inject saved content into Reddit main feed&lt;/li&gt;
+&lt;li&gt;up-to-date syncs with Reddit (limited or manual usage for free accounts,
+automatic backups/syncs as a premium feature)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay tuned for the next post where I dive into the various tech used to power
+Unearth. Until next time!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If Unearth sounds like something you would find useful,
+&lt;a href=&quot;https://www.tryunearth.com/&quot;&gt;sign up today and give it try&lt;/a&gt;. I would love to
+hear your thoughts about the service and any other questions or comments you may
+have.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Unearth Diary #01: What Is It]]></title><description><![CDATA[This is the first article in a series of articles where I discuss my long-time
 side project, Unearth. Topics will include the motivation…]]></description><link>https://cedric.tech/blog/unearth-diary-01-what-is-it/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-01-what-is-it/</guid><pubDate>Sun, 16 Feb 2020 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the first article in a series of articles where I discuss my long-time
 side project, Unearth. Topics will include the motivation behind building Unearth,
 what it is, how it works, and the technology behind it to name a few. Check back
