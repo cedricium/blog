@@ -2,6 +2,8 @@
 title: 'Just Do It'
 date: '2020-02-10T15:00:00.000Z'
 draft: false
+excerpt: "I don't often share the things I'm working on, but after this
+  experience, that will change."
 ---
 
 I'm naturally a very reserved person. Like many introverts, I steer clear of
