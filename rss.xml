@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Tue, 18 Feb 2020 20:20:22 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #02: How Does It Work]]></title><description><![CDATA[This is the second in a series of articles where I discuss my long-time side
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sat, 22 Feb 2020 23:29:27 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #03: The Tech Powering Unearth]]></title><description><![CDATA[This is the third in a series of articles discussing my long-time side project,
+Unearth. For my more technical audience, this post will…]]></description><link>https://cedric.tech/blog/unearth-diary-03-the-tech-powering-unearth/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-03-the-tech-powering-unearth/</guid><pubDate>Sat, 22 Feb 2020 15:30:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the third in a series of articles discussing my long-time side project,
+Unearth. For my more technical audience, this post will cover Unearth’s tech
+stack and architecture.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Unearth subscribes to the monolithic repo (or monorepo) philosophy. Examining
+the source code, you can see that all of the code for both the backend and
+frontend reside in a single repository. Furthermore, the programming language of
+choice is JavaScript since that’s what I know best.&lt;/p&gt;
+&lt;h2&gt;Backend&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;li&gt;Express.js&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;SocketIO&lt;/li&gt;
+&lt;li&gt;Nodemailer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The backend server is powered by Express.js, a web application framework for
+Node.js. The server itself consists of a REST API that returns JSON responses
+and an instance of a socket.io server for polling during the Reddit sync
+process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Database&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Data storage/persistence is accomplished using PostgreSQL. The database itself
+consists of two tables: users and things. The former contains Unearth users and
+holds information like their Reddit id, username, email, account preferences,
+and whether they’ve completed the onboarding process. The latter contains saved
+items (which can either be a Reddit post or comment). The things’ columns
+mirror those of Reddit data, with fields such as: &lt;code class=&quot;language-text&quot;&gt;id&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;subreddit&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;score&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;over_18&lt;/code&gt; (aka NSFW), and &lt;code class=&quot;language-text&quot;&gt;url&lt;/code&gt; to name a few. The things table also has a
+&lt;code class=&quot;language-text&quot;&gt;user_id&lt;/code&gt; column which is used to create a many-to-one relationship with user
+entities.&lt;/p&gt;
+&lt;div style=&quot;margin: 1rem 0 1.5rem&quot;&gt;
+    
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/5b815/unearth-db-schema.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 107.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAACdklEQVQ4y5WU2W7TQBSG87C8AAhxhfoCUKmoFCEWgQQXFERLkXpB04tWrcoiUOGOqiyKm81LPF7Gy9hxfs6ZxM4CSYmlPzPxnPnmnzNnXFNZBmCAxU+By58BmFXjzuezJu69/YiNnQ9Ye32CO1tjrb46xplhYf/LOda3T3CXtL411sab97i1eYTT85aG1ph9+PUHVjcPcfvlEW4+3sPKk/pQT+u4cX9XBz/bP8XK8wNce7iHqw/eVbr+qI4razs4+PZL+6xleY4iVwiFg0GWjLZfVBooCU8mMHsCIgyh+n2kNEexqJ/1C/gyRJKmyOldjX/iOEajYUAIDxH1g1AiZEmJXq8H24vgCgHHtpEkiY5nRTTOrXBdxFE8BnJQt9uFaZoaoIOjiBTD94QGCj/Q4zZBTdOC4zg6LiTX9mihKYccIGlFOVp1CI3hlUDPR6fT0ZMZwuJF9Q5mgfyn3W7rARa7DYJguB3hVkCO8X0fKeWrXJSBbOYvYKvV0sHssFy9zI8lJFKVQSmFjGqtFM/ltnz/T+BU0mPOoVcB+xSbLxBDKyAnnJ2NDyQaJT2A5Q2B5aR5mnLICS9zMYZJvWV7BrjIZXXKDCxPuATywXDtLQ1kV4ZhwOUCndkyl40lwuUdMkyDJoAsT4jqUP4bmJJDq7wlBEn0KVObxJB8E5bOIQEbF02YtoOQbkcgI9326G6bFl21ZRwW/RxCxvhudNGwfTRFhAtXVvptCXQJOFnI88tn5HC68klznEzCBkVOX7d8ptipsBdvYdpN2eddOX5KqVCUroy+hUMpNePwslvA7jmXQB+7n1y8OPbQdmL8bEdoOQl9iHP8AXV0QD6ozH3yAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Unearth database schema&quot; title=&quot;&quot; src=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/b9e4f/unearth-db-schema.png&quot; srcset=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/cf440/unearth-db-schema.png 148w,
+/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/d2d38/unearth-db-schema.png 295w,
+/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/b9e4f/unearth-db-schema.png 590w,
+/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/5b815/unearth-db-schema.png 644w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;center&gt;
+    &lt;small&gt;Unearth database schema courtesy dbdiagram.io&lt;/small&gt;
+  &lt;/center&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Emails&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Emails are sent using Nodemailer. Having never worked with emails or templating
+engines before, I made the mistake of going with PugJS to create the email
+templates. For example, take a look at the
+&lt;a href=&quot;https://github.com/cedricium/unearth/blob/master/emails/welcome/html.pug&quot;&gt;Unearth welcome email&lt;/a&gt;.
+Personally, I find it very hard to read compared to traditional HTML so
+sometime in the future I would like to refactor the templates to something more
+readable such as Handlebars.js.&lt;/p&gt;
+&lt;h2&gt;Frontend&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;React.js / Gatsby&lt;/li&gt;
+&lt;li&gt;Redux&lt;/li&gt;
+&lt;li&gt;styled-components&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When Unearth was first built, the client app was written in React, scaffolded
+using Create React App. I’ve since ported the entire site over to GatsbyJS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Frontend Web Frameworks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There were a number of reasons for choosing Gatsby. One, I wanted to have a
+statically-generated SEO-optimized landing page that was fast to load. Another
+requirement that Gatsby allowed was not having to separate the landing site
+from the actual dynamic web app. I highly recommend reading
+&lt;a href=&quot;https://www.gatsbyjs.org/blog/2018-11-07-gatsby-for-apps/&quot;&gt;&lt;em&gt;Gatsby for Apps&lt;/em&gt;&lt;/a&gt;
+and watching any of Dustin Schau’s conference talks if you want to learn more
+about using Gatsby to build hybrid static/dynamic sites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Styling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Styled Components are used to style the landing and markdown pages. The rest of
+the app is styled using Water.css. In the future I have plans to refactor the
+web app, removing Water.css and replacing it with a themeable React component
+library like Chakra UI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;State Management&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Before Unearth was what it is today (a newsletter delivery service), it was
+supposed to be a web app for filtering, searching, and sorting users’ Reddit
+saves—much akin to sites like RedditManager or Savvit. As such, I setup Redux in
+the project to help manage global state throughout the app. In addition to
+Redux, I had used helper libraries like redux-thunk and redux-persist in order
+to work with asynchronous actions and store Redux state in the user’s local
+storage, respectively.&lt;/p&gt;
+&lt;p&gt;There’s no real reason for keeping Redux on the client nowadays since there is
+a minimal amount of data being fetched and worked on behind the &lt;code class=&quot;language-text&quot;&gt;/app&lt;/code&gt; route. I
+don’t think I will remove it anytime soon, however, because I might venture
+down the path of allowing users to interact with their saves—I guess we’ll see.&lt;/p&gt;
+&lt;h2&gt;Deployments &amp;#x26; DevOps&lt;/h2&gt;
+&lt;p&gt;Despite using a monorepo, the backend and frontend are not coupled together
+when deployed. I use a Heroku hobby dyno for the backend server. This app has a
+couple add-ons installed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Heroku Postgres (production hobby-basic database)&lt;/li&gt;
+&lt;li&gt;Advanced Scheduler (for managing and executing cron jobs responsible for
+sending scheduled newsletters).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The frontend is deployed via Netlify and makes use of the Netlify DNS. Some of
+the DNS settings and records I need to manage include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pointing Namecheap’s nameservers to Netlify&lt;/li&gt;
+&lt;li&gt;improving email deliverability using DKIM and SPF authentication&lt;/li&gt;
+&lt;li&gt;domain authentication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both Heroku and Netlify are integrated with GitHub to do automatic deployments
+from the &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch. Netlify is specifically configured to only deploy
+when changes occur in the client-v2 directory.&lt;/p&gt;
+&lt;p&gt;Heroku deploys everything minus the client and client-v2 directories, thus
+limiting the size of the slug. Recently, I setup a GitHub Actions workflow to
+run tests for all PRs and pushes to the &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch. Heroku uses the results
+from this workflow to automatically deploy new builds if all tests pass.&lt;/p&gt;
+&lt;p&gt;As for emails, both transactional and scheduled/marketing emails are delivered
+via Twilio Sendgrid. I use Zoho Mail to send one-off emails with the
+&lt;code class=&quot;language-text&quot;&gt;tryunearth.com&lt;/code&gt; domain to Unearth users regarding updates to the service.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If Unearth sounds like something you would find useful,
+&lt;a href=&quot;https://www.tryunearth.com/&quot;&gt;sign up today and give it try&lt;/a&gt;. I would love to
+hear your thoughts about the service and any other questions or comments you may
+have.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Unearth Diary #02: How Does It Work]]></title><description><![CDATA[This is the second in a series of articles where I discuss my long-time side
 project, Unearth. Topics will include the motivation behind…]]></description><link>https://cedric.tech/blog/unearth-diary-02-how-does-it-work/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-02-how-does-it-work/</guid><pubDate>Tue, 18 Feb 2020 12:15:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the second in a series of articles where I discuss my long-time side
 project, Unearth. Topics will include the motivation behind building Unearth,
 what it is, how it works, and the technology powering the service to name a few.
