@@ -1,9 +1,5 @@
 import React from 'react'
 
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
 import profilePic from '../assets/avatar.png'
 import { rhythm } from '../utils/typography'
 
@@ -32,9 +28,11 @@ class Bio extends React.Component {
           <a
             href="https://twitter.com/cedricamaya"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             follow him on Twitter
-          </a>.
+          </a>
+          .
         </p>
       </div>
     )

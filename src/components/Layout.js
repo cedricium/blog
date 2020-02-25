@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import 'typeface-source-sans-pro'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -43,7 +42,6 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: '#007bff',
             }}
             to={'/'}
           >

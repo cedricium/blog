@@ -11,7 +11,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteAuthor = this.props.data.site.siteMetadata.author
     const siteTitle = this.props.data.site.siteMetadata.title
-    const siteDescription = post.excerpt
+    const { timeToRead } = post
     const { previous, next } = this.props.pageContext
 
     return (
@@ -26,17 +26,14 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: 'block',
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-0.5),
+            fontWeight: 500,
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date} &middot; {timeToRead} min read
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr style={{ marginBottom: rhythm(1) }} />
         <Bio />
 
         <ul
@@ -83,6 +80,7 @@ export const pageQuery = graphql`
       id
       excerpt
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
