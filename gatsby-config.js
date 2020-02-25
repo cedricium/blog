@@ -7,6 +7,7 @@ module.exports = {
   },
   pathPrefix: '/blog',
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
