@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>RSS for Node</generator><lastBuildDate>Sat, 22 Feb 2020 23:29:27 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #03: The Tech Powering Unearth]]></title><description><![CDATA[This is the third in a series of articles discussing my long-time side project,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Feb 2020 22:23:00 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #03: The Tech Powering Unearth]]></title><description><![CDATA[This is the third in a series of articles discussing my long-time side project,
 Unearth. For my more technical audience, this post will…]]></description><link>https://cedric.tech/blog/unearth-diary-03-the-tech-powering-unearth/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-03-the-tech-powering-unearth/</guid><pubDate>Sat, 22 Feb 2020 15:30:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the third in a series of articles discussing my long-time side project,
 Unearth. For my more technical audience, this post will cover Unearth’s tech
 stack and architecture.&lt;/p&gt;
@@ -29,20 +29,15 @@ mirror those of Reddit data, with fields such as: &lt;code class=&quot;language-
 &lt;code class=&quot;language-text&quot;&gt;user_id&lt;/code&gt; column which is used to create a many-to-one relationship with user
 entities.&lt;/p&gt;
 &lt;div style=&quot;margin: 1rem 0 1.5rem&quot;&gt;
-    
-  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/5b815/unearth-db-schema.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-  
-  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 107.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAACdklEQVQ4y5WU2W7TQBSG87C8AAhxhfoCUKmoFCEWgQQXFERLkXpB04tWrcoiUOGOqiyKm81LPF7Gy9hxfs6ZxM4CSYmlPzPxnPnmnzNnXFNZBmCAxU+By58BmFXjzuezJu69/YiNnQ9Ye32CO1tjrb46xplhYf/LOda3T3CXtL411sab97i1eYTT85aG1ph9+PUHVjcPcfvlEW4+3sPKk/pQT+u4cX9XBz/bP8XK8wNce7iHqw/eVbr+qI4razs4+PZL+6xleY4iVwiFg0GWjLZfVBooCU8mMHsCIgyh+n2kNEexqJ/1C/gyRJKmyOldjX/iOEajYUAIDxH1g1AiZEmJXq8H24vgCgHHtpEkiY5nRTTOrXBdxFE8BnJQt9uFaZoaoIOjiBTD94QGCj/Q4zZBTdOC4zg6LiTX9mihKYccIGlFOVp1CI3hlUDPR6fT0ZMZwuJF9Q5mgfyn3W7rARa7DYJguB3hVkCO8X0fKeWrXJSBbOYvYKvV0sHssFy9zI8lJFKVQSmFjGqtFM/ltnz/T+BU0mPOoVcB+xSbLxBDKyAnnJ2NDyQaJT2A5Q2B5aR5mnLICS9zMYZJvWV7BrjIZXXKDCxPuATywXDtLQ1kV4ZhwOUCndkyl40lwuUdMkyDJoAsT4jqUP4bmJJDq7wlBEn0KVObxJB8E5bOIQEbF02YtoOQbkcgI9326G6bFl21ZRwW/RxCxvhudNGwfTRFhAtXVvptCXQJOFnI88tn5HC68klznEzCBkVOX7d8ptipsBdvYdpN2eddOX5KqVCUroy+hUMpNePwslvA7jmXQB+7n1y8OPbQdmL8bEdoOQl9iHP8AXV0QD6ozH3yAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Unearth database schema&quot; title=&quot;&quot; src=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/b9e4f/unearth-db-schema.png&quot; srcset=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/cf440/unearth-db-schema.png 148w,
-/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/d2d38/unearth-db-schema.png 295w,
-/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/b9e4f/unearth-db-schema.png 590w,
-/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/5b815/unearth-db-schema.png 644w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/78274/unearth-db-schema.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 107.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAACdklEQVQ4y5WU2W7TQBSG87C8AAhxhfoCUKmoFCEWgQQXFERLkXpB04tWrcoiUOGOqiyKm81LPF7Gy9hxfs6ZxM4CSYmlPzPxnPnmnzNnXFNZBmCAxU+By58BmFXjzuezJu69/YiNnQ9Ye32CO1tjrb46xplhYf/LOda3T3CXtL411sab97i1eYTT85aG1ph9+PUHVjcPcfvlEW4+3sPKk/pQT+u4cX9XBz/bP8XK8wNce7iHqw/eVbr+qI4razs4+PZL+6xleY4iVwiFg0GWjLZfVBooCU8mMHsCIgyh+n2kNEexqJ/1C/gyRJKmyOldjX/iOEajYUAIDxH1g1AiZEmJXq8H24vgCgHHtpEkiY5nRTTOrXBdxFE8BnJQt9uFaZoaoIOjiBTD94QGCj/Q4zZBTdOC4zg6LiTX9mihKYccIGlFOVp1CI3hlUDPR6fT0ZMZwuJF9Q5mgfyn3W7rARa7DYJguB3hVkCO8X0fKeWrXJSBbOYvYKvV0sHssFy9zI8lJFKVQSmFjGqtFM/ltnz/T+BU0mPOoVcB+xSbLxBDKyAnnJ2NDyQaJT2A5Q2B5aR5mnLICS9zMYZJvWV7BrjIZXXKDCxPuATywXDtLQ1kV4ZhwOUCndkyl40lwuUdMkyDJoAsT4jqUP4bmJJDq7wlBEn0KVObxJB8E5bOIQEbF02YtoOQbkcgI9326G6bFl21ZRwW/RxCxvhudNGwfTRFhAtXVvptCXQJOFnI88tn5HC68klznEzCBkVOX7d8ptipsBdvYdpN2eddOX5KqVCUroy+hUMpNePwslvA7jmXQB+7n1y8OPbQdmL8bEdoOQl9iHP8AXV0QD6ozH3yAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Unearth database schema&quot; title=&quot;Unearth database schema&quot; src=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/fcda8/unearth-db-schema.png&quot; srcset=&quot;/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/12f09/unearth-db-schema.png 148w,
+/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/e4a3f/unearth-db-schema.png 295w,
+/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/fcda8/unearth-db-schema.png 590w,
+/blog/static/762ca5476fe0d1aaa50d4c1da65daa59/78274/unearth-db-schema.png 644w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
   &lt;/a&gt;
-    
+    &lt;/span&gt;
   &lt;center&gt;
     &lt;small&gt;Unearth database schema courtesy dbdiagram.io&lt;/small&gt;
   &lt;/center&gt;
@@ -152,21 +147,16 @@ are personalized, containing only links that they themselves have saved.&lt;/p&g
 their account and all associated data entirely, they can do so by visiting the
 Account page.&lt;/p&gt;
 &lt;div&gt;
-    
-  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/b12db/account-page.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-  
-  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 68.30985915492958%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABZklEQVQ4y6VSWWrDMBDV/U+RKwTav9BCjlA31IUQpzE0dRYvkmU7lq3XGdnZaKFxI3jM/jQjjQgWC3ieh/l8jtnrDL7/jrqu0TQNSQNjzmD/yf5F5xpRFCWyLIOUCkmSII5jpEnqfGwznE5+jrGepmmXR/KsZ1BKQWxkjmi9RhRFrljnmsglJBXmee7AiYxckU4XOx9JRXns17qrYb/Q1cEFuNPWWlgAbWt7tGh6HO3LmJO2s485YrvbYRkskXJX1J0uSxhHYm+GYWk7KTIa44tGDsMQ4WqF/X7vbu+OxZDD3QpJc283m6uA5dEH4kSY0OP7/ptbicvgpf7XuSKsiIhXQtHo/+nsR4cl/fKeRo4+19C0AvccJhbKNFjFCT4IcdOipsCBJX1M3QwA5XOdyF88xKMRyvEY5uERhhbWECmvjulX4lYwqaiCAMXzE+R0imwyQUFrc9fIFSmaIHsoetPTyAPBdd91fUUlrFjkRAAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Example Unearth Account page&quot; title=&quot;&quot; src=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/b9e4f/account-page.png&quot; srcset=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/cf440/account-page.png 148w,
-/blog/static/e46e872166d51b66579a5c84071d40c2/d2d38/account-page.png 295w,
-/blog/static/e46e872166d51b66579a5c84071d40c2/b9e4f/account-page.png 590w,
-/blog/static/e46e872166d51b66579a5c84071d40c2/f9b6a/account-page.png 885w,
-/blog/static/e46e872166d51b66579a5c84071d40c2/b12db/account-page.png 994w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/75609/account-page.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 68.30985915492958%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABZklEQVQ4y6VSWWrDMBDV/U+RKwTav9BCjlA31IUQpzE0dRYvkmU7lq3XGdnZaKFxI3jM/jQjjQgWC3ieh/l8jtnrDL7/jrqu0TQNSQNjzmD/yf5F5xpRFCWyLIOUCkmSII5jpEnqfGwznE5+jrGepmmXR/KsZ1BKQWxkjmi9RhRFrljnmsglJBXmee7AiYxckU4XOx9JRXns17qrYb/Q1cEFuNPWWlgAbWt7tGh6HO3LmJO2s485YrvbYRkskXJX1J0uSxhHYm+GYWk7KTIa44tGDsMQ4WqF/X7vbu+OxZDD3QpJc283m6uA5dEH4kSY0OP7/ptbicvgpf7XuSKsiIhXQtHo/+nsR4cl/fKeRo4+19C0AvccJhbKNFjFCT4IcdOipsCBJX1M3QwA5XOdyF88xKMRyvEY5uERhhbWECmvjulX4lYwqaiCAMXzE+R0imwyQUFrc9fIFSmaIHsoetPTyAPBdd91fUUlrFjkRAAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Example Unearth Account page&quot; title=&quot;Example Unearth Account page&quot; src=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/fcda8/account-page.png&quot; srcset=&quot;/blog/static/e46e872166d51b66579a5c84071d40c2/12f09/account-page.png 148w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/e4a3f/account-page.png 295w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/fcda8/account-page.png 590w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/efc66/account-page.png 885w,
+/blog/static/e46e872166d51b66579a5c84071d40c2/75609/account-page.png 994w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
   &lt;/a&gt;
-    
+    &lt;/span&gt;
   &lt;center&gt;
     &lt;small&gt;Screenshot of the Account page.&lt;/small&gt;
   &lt;/center&gt;
@@ -226,18 +216,15 @@ can we place the blame on our forgetfulness—with Unearth, we can be shown some
 of our Reddit saves as frequently as every day.&lt;/p&gt;
 &lt;div&gt;
 &lt;a href=&quot;https://www.tryunearth.com&quot;&gt;
-  
-  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 54.305555555555564%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABwklEQVQoz12STW7bMBCFCfh8/dm1tpt9ztBl971B2gN0UcCbLrxyDPQMtSU5sYEG3siVZEmkSFF6naHISAmBB9EG5uObeSOqqsL5fMbfpyc0eQr0Hfq+H2UN+LTfbqHfCTTLGeRHgZrULuj3XECRNN3tUkAopXC9XpHnOVVpvD5ToHpLhZ8IOB9B/DUE65Ye2DQNyrLE8K3cvSgKZFkGay1gWwfUBKzeUNHNzLlhh86ZB2oPF6fTCev1GpvNBqvVCtvtFvf3W0T7PT1Cjjv7wiG33MxHAItHIP0DIk1TV7wn7XZ/kCSJ0+uWjQcaaplnN4VoP0N2Ki6XC/ZRhMfHIwF3iOiexAmOxxO6rntuOYTS3gyhhBkq33J4ROR5hpjcJTFBHx4QxzEOhwP4IeewHRxaAhoCSmpZTZINSXMoFQP76Df6H5/R//wC/PqKqsiQXv651KdrY7/fQvqUAzAkG8CuZXCBrmlI0onbDDvojg+FZyh9KNIHEcJREwlLgMa0UJSo0saBeIW01k6NrMHbqe9GIDvplwOg/DC0GkISxhjUdQ1ecAaww4r2kf+TUqIuC0g2Si2376l4MYP1e/ec8mLUf41nqC18dXnoAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Unearth homepage&quot; title=&quot;&quot; src=&quot;/blog/static/7386160fac84e67e0a75aa1d14282c2f/b9e4f/unearth-homepage.png&quot; srcset=&quot;/blog/static/7386160fac84e67e0a75aa1d14282c2f/cf440/unearth-homepage.png 148w,
-/blog/static/7386160fac84e67e0a75aa1d14282c2f/d2d38/unearth-homepage.png 295w,
-/blog/static/7386160fac84e67e0a75aa1d14282c2f/b9e4f/unearth-homepage.png 590w,
-/blog/static/7386160fac84e67e0a75aa1d14282c2f/f9b6a/unearth-homepage.png 885w,
-/blog/static/7386160fac84e67e0a75aa1d14282c2f/2d849/unearth-homepage.png 1180w,
-/blog/static/7386160fac84e67e0a75aa1d14282c2f/8d0ff/unearth-homepage.png 1440w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 54.305555555555564%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABwklEQVQoz12STW7bMBCFCfh8/dm1tpt9ztBl971B2gN0UcCbLrxyDPQMtSU5sYEG3siVZEmkSFF6naHISAmBB9EG5uObeSOqqsL5fMbfpyc0eQr0Hfq+H2UN+LTfbqHfCTTLGeRHgZrULuj3XECRNN3tUkAopXC9XpHnOVVpvD5ToHpLhZ8IOB9B/DUE65Ye2DQNyrLE8K3cvSgKZFkGay1gWwfUBKzeUNHNzLlhh86ZB2oPF6fTCev1GpvNBqvVCtvtFvf3W0T7PT1Cjjv7wiG33MxHAItHIP0DIk1TV7wn7XZ/kCSJ0+uWjQcaaplnN4VoP0N2Ki6XC/ZRhMfHIwF3iOiexAmOxxO6rntuOYTS3gyhhBkq33J4ROR5hpjcJTFBHx4QxzEOhwP4IeewHRxaAhoCSmpZTZINSXMoFQP76Df6H5/R//wC/PqKqsiQXv651KdrY7/fQvqUAzAkG8CuZXCBrmlI0onbDDvojg+FZyh9KNIHEcJREwlLgMa0UJSo0saBeIW01k6NrMHbqe9GIDvplwOg/DC0GkISxhjUdQ1ecAaww4r2kf+TUqIuC0g2Si2376l4MYP1e/ec8mLUf41nqC18dXnoAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Unearth homepage&quot; title=&quot;Unearth homepage&quot; src=&quot;/blog/static/7386160fac84e67e0a75aa1d14282c2f/fcda8/unearth-homepage.png&quot; srcset=&quot;/blog/static/7386160fac84e67e0a75aa1d14282c2f/12f09/unearth-homepage.png 148w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/e4a3f/unearth-homepage.png 295w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/fcda8/unearth-homepage.png 590w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/efc66/unearth-homepage.png 885w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/c83ae/unearth-homepage.png 1180w,
+/blog/static/7386160fac84e67e0a75aa1d14282c2f/07a9c/unearth-homepage.png 1440w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
     &lt;/span&gt;
-  &lt;/span&gt;
-  
 &lt;/a&gt;
 &lt;center&gt;
   &lt;small&gt;Screenshot of the Unearth homepage.&lt;/small&gt;
@@ -338,7 +325,7 @@ results, and you will never know unless you put in the effort. So just do it.&lt
 codebase, use the following command: Problem A…]]></description><link>https://cedric.tech/blog/searching-git-history/</link><guid isPermaLink="false">https://cedric.tech/blog/searching-git-history/</guid><pubDate>Tue, 24 Dec 2019 21:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;tl;dr&lt;/h2&gt;
 &lt;p&gt;When you need to see when a specific piece of code was introduced or deleted in your
 codebase, use the following command:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git log -S&amp;lt;string&amp;gt; [&amp;lt;options&amp;gt; [-- &amp;lt;path&amp;gt;…]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; log -S&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;string&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;options&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;-- &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;path&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;…&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;A few times a month, a coworker of mine will ask to see what the code for a given
 event does (they do not have access to our company’s GitHub repos). This particular
@@ -366,7 +353,7 @@ to “look for differences that introduce or remove an instance of string.”&lt
 &lt;p&gt;Given the dilemma outlined above, what I did was use the &lt;code class=&quot;language-text&quot;&gt;git log&lt;/code&gt; command along with
 the event passed to the &lt;code class=&quot;language-text&quot;&gt;-S&lt;/code&gt; flag (I also added the path to the file where the
 event should have been):&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ git log -S &amp;quot;reports-get-manifest-error&amp;quot; -- src/controllers/policy-evaluation.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; log -S &lt;span class=&quot;token string&quot;&gt;&quot;reports-get-manifest-error&quot;&lt;/span&gt; -- src/controllers/policy-evaluation.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;After running this command, I was presented with two commits: one where the
 “reports-get-manifest-error” event was originally introduced in the codebase,
 and the other where it was removed.&lt;/p&gt;
@@ -393,7 +380,7 @@ on the &lt;code class=&quot;language-text&quot;&gt;/api/posts&lt;/code&gt; route
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/posts/index.js */&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-postsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+postsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
 
@@ -430,7 +417,7 @@ the &lt;code class=&quot;language-text&quot;&gt;/api/posts/:id/comments&lt;/code
 nested/child comments router, I was met with &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/comments/index.js */&lt;/span&gt;
 
-commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;params&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id  &lt;span class=&quot;token comment&quot;&gt;// ==&gt; would return `undefined`&lt;/span&gt;
   &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
@@ -461,11 +448,11 @@ my &lt;code class=&quot;language-text&quot;&gt;postsRouter&lt;/code&gt; and &lt;
 in &lt;code class=&quot;language-text&quot;&gt;commentsRouter&lt;/code&gt; via &lt;code class=&quot;language-text&quot;&gt;req.params&lt;/code&gt;. That was it, just the fix I needed!&lt;/p&gt;
 &lt;p&gt;One small addition to the code and my original setup now works:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* routes/comments/index.js */&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; commentsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; mergeParams&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; commentsRouter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; mergeParams&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
            &lt;span class=&quot;token comment&quot;&gt;// note the addition of `mergeParams` ^^^^^^^^^^^^^^^^^^^^^&lt;/span&gt;
 &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
 
-commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+commentsRouter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; postId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;params&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id  &lt;span class=&quot;token comment&quot;&gt;// ==&gt; this now works 🎉&lt;/span&gt;
   &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -476,14 +463,10 @@ coding. No matter how big or small the victory, I will always be proud of myself
 and I look forward to tackling the next one.&lt;/p&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Express &lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; instantiation documentation:
-&lt;a href=&quot;https://expressjs.com/en/4x/api.html#express.router&quot;&gt;https://expressjs.com/en/4x/api.html#express.router&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Example code on GitHub:
-&lt;a href=&quot;https://github.com/cedricium/webapi-ii-challenge/tree/cedric-amaya&quot;&gt;https://github.com/cedricium/webapi-ii-challenge/tree/cedric-amaya&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Express &lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; instantiation documentation:
+&lt;a href=&quot;https://expressjs.com/en/4x/api.html#express.router&quot;&gt;https://expressjs.com/en/4x/api.html#express.router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Example code on GitHub:
+&lt;a href=&quot;https://github.com/cedricium/webapi-ii-challenge/tree/cedric-amaya&quot;&gt;https://github.com/cedricium/webapi-ii-challenge/tree/cedric-amaya&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Setting Up Continuous Deployments (CD) for a React App using Netlify]]></title><description><![CDATA[A straightforward guide to setting up Continuous Deployment for a React app
 hosted on GitHub and deployed using Netlify. Background If you…]]></description><link>https://cedric.tech/blog/deploying-react-app-with-netlify/</link><guid isPermaLink="false">https://cedric.tech/blog/deploying-react-app-with-netlify/</guid><pubDate>Thu, 09 May 2019 12:30:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;A straightforward guide to setting up Continuous Deployment for a React app
 hosted on GitHub and deployed using Netlify.&lt;/em&gt;&lt;/p&gt;
@@ -880,16 +863,10 @@ do these things when required of me, namely academically-speaking.&lt;/p&gt;
 &lt;p&gt;Thus, through the inquisition of myself and some research, this essay aims to
 answer the following questions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Can lazy people, who do not apply themselves academically, pursue creative
-and/or mentally-demanding endeavors?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What motivates these individuals?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Can said motivation be applied towards performing at a higher level academically?&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Can lazy people, who do not apply themselves academically, pursue creative
+and/or mentally-demanding endeavors?&lt;/li&gt;
+&lt;li&gt;What motivates these individuals?&lt;/li&gt;
+&lt;li&gt;Can said motivation be applied towards performing at a higher level academically?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
   Myself as case study
@@ -1071,7 +1048,7 @@ made Glass’ advice into a nice little r/GetMotivated-esque poster.&lt;sup&gt;2
 &lt;li&gt;&lt;a href=&quot;https://zenpencils.com/comic/90-ira-glass-advice-for-beginners/&quot;&gt;https://zenpencils.com/comic/90-ira-glass-advice-for-beginners/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://i.redd.it/25ueejz4jj321.png&quot;&gt;https://i.redd.it/25ueejz4jj321.png&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[I Have Moved]]></title><description><![CDATA[No, I haven’t moved physically. Rather, I’ve moved my blog. My first blog,
- coffee. code. cedric , was hosted on Medium when that was the…]]></description><link>https://cedric.tech/blog/i-have-moved/</link><guid isPermaLink="false">https://cedric.tech/blog/i-have-moved/</guid><pubDate>Wed, 12 Dec 2018 21:48:40 GMT</pubDate><content:encoded>&lt;p&gt;No, I haven’t moved physically. Rather, I’ve moved my blog. My first blog,
+coffee. code. cedric, was hosted on Medium when that was the cool…]]></description><link>https://cedric.tech/blog/i-have-moved/</link><guid isPermaLink="false">https://cedric.tech/blog/i-have-moved/</guid><pubDate>Wed, 12 Dec 2018 21:48:40 GMT</pubDate><content:encoded>&lt;p&gt;No, I haven’t moved physically. Rather, I’ve moved my blog. My first blog,
 &lt;em&gt;coffee. code. cedric&lt;/em&gt;, was hosted on Medium when that was the cool thing to do.
 I even had a custom domain for my publication before that
 &lt;a href=&quot;https://help.medium.com/hc/en-us/articles/115003053487%0A-Custom-Domains-service-deprecation&quot;&gt;feature was steamrolled&lt;/a&gt;.&lt;/p&gt;
