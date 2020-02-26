@@ -37,6 +37,15 @@
   Link: </blog/component---node-modules-gatsby-plugin-offline-app-shell-js-498d614abd91358533fa.js>; rel=preload; as=script
   Link: </blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </blog/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog/always-searching-for-answers/
+  Link: </blog/webpack-runtime-f72e8e32e5a79fa656a4.js>; rel=preload; as=script
+  Link: </blog/styles-1a925a1601c065fa085f.js>; rel=preload; as=script
+  Link: </blog/commons-10c682a83ab9b82a429c.js>; rel=preload; as=script
+  Link: </blog/app-7a40cc5851542cac00fa.js>; rel=preload; as=script
+  Link: </blog/commons-10c682a83ab9b82a429c.js>; rel=preload; as=script
+  Link: </blog/component---src-templates-blog-post-js-e572d3166c725deea874.js>; rel=preload; as=script
+  Link: </blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog/page-data/always-searching-for-answers/page-data.json>; rel=preload; as=fetch; crossorigin
 /blog/unearth-diary-03-the-tech-powering-unearth/
   Link: </blog/webpack-runtime-f72e8e32e5a79fa656a4.js>; rel=preload; as=script
   Link: </blog/styles-1a925a1601c065fa085f.js>; rel=preload; as=script

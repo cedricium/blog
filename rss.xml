@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Feb 2020 23:06:50 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #03: The Tech Powering Unearth]]></title><description><![CDATA[This is the third in a series of articles discussing my long-time side project,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 26 Feb 2020 23:03:19 GMT</lastBuildDate><item><title><![CDATA[Always Searching for Answers]]></title><description><![CDATA[And the Paralysis That Comes with Doing So I’m overly anxious, always concerned about one thing or another. Generally
+speaking, I’m…]]></description><link>https://cedric.tech/blog/always-searching-for-answers/</link><guid isPermaLink="false">https://cedric.tech/blog/always-searching-for-answers/</guid><pubDate>Wed, 26 Feb 2020 15:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;And the Paralysis That Comes with Doing So&lt;/h2&gt;
+&lt;p&gt;I’m overly anxious, always concerned about one thing or another. Generally
+speaking, I’m uncomfortable with not knowing what’s to come or how to do
+something, so I seek out answers to those unknowns.&lt;/p&gt;
+&lt;p&gt;As a software developer, I rely heavily on Google to look up solutions to any
+challenges or issues I face when writing code. Majority of the time, someone
+else also came across the same issue and as such, an answer is typically posted
+somewhere on the web.&lt;/p&gt;
+&lt;p&gt;As I’ve gotten older, I’ve realized this same approach of searching for answers
+can also be applied to life’s own problems. For example, here is a random list
+of some of my own Google searches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;doing stuff alone terrifies me&lt;/li&gt;
+&lt;li&gt;combative to working / cannot focus on work&lt;/li&gt;
+&lt;li&gt;want to write but unsure what to write about&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This very blog post was inspired by a homonymous Google search: “always
+searching for answers”. But what happens when one applies this resourcefulness
+to all aspects of their life? The short answer as it applies to me: nothing
+gets done.&lt;/p&gt;
+&lt;h3&gt;Why Do I Do This&lt;/h3&gt;
+&lt;p&gt;There are several reasons I can think of as to why I’m always searching for
+answers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I struggle with wanting to do things the “best” way by following “best
+practices”&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this is possibly due to a lack in confidence in my own abilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;want to save myself from failing if I can just do it right the first time&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;because I’m scared of failing, looking for answers is like an avoidance
+tactic&lt;/li&gt;
+&lt;li&gt;I also forget that failing is the key to success so I’m not doing myself
+any favors by “protecting” myself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I’m lazy: don’t want to discover the solutions myself; would rather use
+someone elses findings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What’s The Problem&lt;/h3&gt;
+&lt;p&gt;When I find myself searching for answers to every little nuisance in my life,
+it takes time away from doing the things I actually want to do. As a result, I
+end up feeling stuck because now I’m no longer making any progress. This goes
+against a critical phase in
+&lt;a href=&quot;../advice-for-beginners&quot;&gt;advancing any creative’s skills&lt;/a&gt; from novice to
+expert: “…do a lot of work. Do a huge volume of work.”&lt;/p&gt;
+&lt;h3&gt;How Can I Fix This&lt;/h3&gt;
+&lt;p&gt;Fears aside, I need to start doing what I want to do, regardless of the
+outcomes (be it failure or success). At this point in my journey, results
+shouldn’t matter. Instead, I need to be focused on producing that volume of
+work in order to close the gap. Rarely does someone who’s wet behind the ears
+strike gold and produce/develop a highly-regarded piece of work. This is a key
+aspect I often overlook when ruminating on my own journey as a developer.&lt;/p&gt;
+&lt;p&gt;Since I’ve somehow forgotten Glass’ advice since first reading it a little over
+a year ago, I’ve also decided to print out his &lt;em&gt;The Gap&lt;/em&gt; quote. The plan is to read it once every day, reminding myself that my current goal is to close that
+gap between taste and talent and to do so through my own efforts.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Unearth Diary #03: The Tech Powering Unearth]]></title><description><![CDATA[This is the third in a series of articles discussing my long-time side project,
 Unearth. For my more technical audience, this post will…]]></description><link>https://cedric.tech/blog/unearth-diary-03-the-tech-powering-unearth/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-03-the-tech-powering-unearth/</guid><pubDate>Sat, 22 Feb 2020 15:30:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the third in a series of articles discussing my long-time side project,
 Unearth. For my more technical audience, this post will cover Unearth’s tech
 stack and architecture.&lt;/p&gt;
