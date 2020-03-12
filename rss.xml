@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 26 Feb 2020 23:03:19 GMT</lastBuildDate><item><title><![CDATA[Always Searching for Answers]]></title><description><![CDATA[And the Paralysis That Comes with Doing So I’m overly anxious, always concerned about one thing or another. Generally
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Mar 2020 22:54:13 GMT</lastBuildDate><item><title><![CDATA[Unearth Diary #04: Does It Even Work?]]></title><description><![CDATA[This is the fourth in a series of articles where I discuss my long-time side
+project, Unearth. Unearth is a service that surfaces users…]]></description><link>https://cedric.tech/blog/unearth-diary-04-does-it-even-work/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-04-does-it-even-work/</guid><pubDate>Thu, 12 Mar 2020 15:50:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the fourth in a series of articles where I discuss my long-time side
+project, Unearth. Unearth is a service that surfaces users’ Reddit saves using
+personalized emails at the frequency of their choice—think of it like Timehop
+for Reddit saves.&lt;/p&gt;
+&lt;h2&gt;A Poor Man’s Attempt at Determining User Sentiment Based Solely on Email Metrics&lt;/h2&gt;
+&lt;p&gt;It’s an interesting (though mostly unsettling) feeling when the product you
+made no longer seems to be working, at least not as you had intended. That’s
+how I feel with Unearth. Its goal seemed simple: surface the hundreds of things
+I had saved on Reddit and assist me with removing some of that content.&lt;/p&gt;
+&lt;p&gt;As much as I hate to admit it, it seems as though Unearth doesn’t work; at
+least not for me personally. I would often ignore the Unearth emails entirely
+and rarely would I click any of the links in the email if I did open it in the
+first place. I started to catch on to the fact that Unearth wasn’t as useful as
+I had wished when I found myself deleting my own personalized emails as soon as
+they hit my inbox. But then people
+&lt;a href=&quot;https://news.ycombinator.com/item?id=22177077&quot;&gt;told me it was a cool idea&lt;/a&gt;, so
+maybe I am just the odd one out.&lt;/p&gt;
+&lt;p&gt;Without talking to my users directly, it’s hard to tell. I wonder if the
+numbers paint a different picture? As a naturally-curious individual, I set out
+to determine Unearth users’ sentiments towards the platform based solely on the
+email metrics provided by Sendgrid.&lt;/p&gt;
+&lt;h3&gt;Email Metrics&lt;/h3&gt;
+&lt;p&gt;Full disclosure: I connected Unearth to Sendgrid on around October 20, 2019. At
+that time, there would have been only ~2 users/accounts: my own and my
+girlfriend’s (basically a test account). I’m not going to try and remove those
+numbers from the coming metrics since the test account basically went unused
+and I consider my account as an actual Unearth user.&lt;/p&gt;
+&lt;p&gt;They say a picture is worth a thousands words, so I’ll just drop a screenshot
+of my Sendgrid dashboard containing the most relevant information.&lt;/p&gt;
+&lt;div style=&quot;margin: 1rem 0 1.5rem&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/187fa/sendgrid-stats.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 52.93132328308208%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABu0lEQVQoz4VSSXLbMBDk/3+VUuLKKT7Y5Uq8yLElUZS4gBsWAoQ6jaGkxBfn0DWYrWfBZPc/n/H0+o6HxzXyQ4UYI0IImOf5ihCSTLYoSP4wL0j2KDFBkM1nRZLDknxx+rMUP+2jHVCPDWwA3yku4nbr8PXFkDRCu38IT6cThrGHdZZvkMDDDC19XnzWTWiHEc5TNgraTiw4o+kNOsPiPmAisksHKakbFIzVQhhnEulaZFqD8x6tdjhFFlYdrLUylZ9cCmYDy/iZZ+AFy37msx6kA5HUl7FZPMXFZaqLfTrnyw6naboSTv7ve8FHPSVq54T0YjPUq3GUYmnn2UeCz5EIlbFC6iYvH2XY0HHQMsm1w/BfoqVTx1hlDCp+jraG+7Pca4dc7VD2nZyPdDjyx1K1GJbTWRCu7xN3mzDzTFrezGuZ42m/xq7KsSl5v/Uz1sUbi4zIDM/krSnRDB0U0eseg+lZRLMT2kaFd3VE3lbspMAdiVYvN/i+XmH1+AUPmxv82t/ix+9vqPsCmTYKRb1F3mxRtjlUv0fJd90dcGwPKLsjtnVB7AR5vcGBxDXtVX/gHe7FXjDHOI0/SR1TH7b+iJIAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Sendgrid stats dashboard for Unearth since its inception.&quot; title=&quot;Sendgrid stats dashboard for Unearth since its inception.&quot; src=&quot;/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/fcda8/sendgrid-stats.png&quot; srcset=&quot;/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/12f09/sendgrid-stats.png 148w,
+/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/e4a3f/sendgrid-stats.png 295w,
+/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/fcda8/sendgrid-stats.png 590w,
+/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/efc66/sendgrid-stats.png 885w,
+/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/c83ae/sendgrid-stats.png 1180w,
+/blog/static/278dc31a2faa0f2db0f699a3ad443bd4/187fa/sendgrid-stats.png 1194w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;center&gt;
+    &lt;small&gt;Sendgrid stats dashboard for Unearth since its inception.&lt;/small&gt;
+  &lt;/center&gt;
+&lt;/div&gt;
+&lt;p&gt;So what do these graphs and numbers tell us? I’m not entirely sure myself. From
+the little research I’ve done so far, I have learned there are several key
+performance indicators (or KPIs) that are beneficial in understanding how well
+one’s emails are doing. As I mentioned earlier, because Unearth’s emails and
+their contents are personalized to the receiver, I’m not sure how applicable
+these KPIs are for measuring Unearth’s success. We’ll run with them anyways.&lt;/p&gt;
+&lt;p&gt;The KPIs we’ll be examining in this article are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open rate (OR): “number of emails opened compared to the total amount
+delivered”&lt;/li&gt;
+&lt;li&gt;click-through rate (CTR): “number of clicks on the links”&lt;/li&gt;
+&lt;li&gt;click-to-open rate (CTOR): “number of clicks with respect to the number of
+openings…measuring the level of interaction”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using the stats obtained from Sendgrid, let’s calculate the aforementioned KPIs
+for Unearth:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OR: 413 emails opened / 820 emails delivered = &lt;strong&gt;50.37%&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;CTR: 118 unique links clicked / 820 emails delivered = &lt;strong&gt;14.39%&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;CTOR: 118 unique links clicked / 413 emails opened = &lt;strong&gt;28.57%&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Analysis&lt;/h3&gt;
+&lt;p&gt;Without any reference, these percentages are useless. A little googling later
+and I found several resources that outline what “good” or the average KPIs are
+across various industries. According to Mailchimp (as calculated by their
+customers’ campaigns with more than 1,000 subscribers), the &lt;strong&gt;average open rate
+is 21.33%&lt;/strong&gt;. Compared to Unearth’s roughly 50%, that seems pretty good on
+our part!&lt;/p&gt;
+&lt;p&gt;Likewise, they analyzed the &lt;strong&gt;average click rate to be a mere 2.62%&lt;/strong&gt;. Remember
+Unearth’s click rate is about 14%, again well above average.&lt;/p&gt;
+&lt;p&gt;Sendgrid determined the &lt;strong&gt;aggregate click-to-open rate in 2018 was 10.1%&lt;/strong&gt;.
+Like the other two KPIs we’ve examined, Unearth beats this at a CTOR of about
+29%.&lt;/p&gt;
+&lt;h3&gt;Verdict&lt;/h3&gt;
+&lt;p&gt;As the subtitle suggests, this comparison between Unearth’s KPIs and the
+average KPIs of Mailchimp’s and Sendgrid’s customers isn’t exactly
+apples-to-apples. It does, however, give me faith that Unearth is still helping
+others even if it doesn’t fit my own wants or wishes. At the end of the day,
+this research has proven to me the platform does in fact seem to be working and
+there is no reason to shut it down now.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.mailup.com/2017/01/email-metrics/&quot;&gt;https://blog.mailup.com/2017/01/email-metrics/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://mailchimp.com/resources/email-marketing-benchmarks/&quot;&gt;https://mailchimp.com/resources/email-marketing-benchmarks/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ahoy.sendgrid.com/rs/294-TKB-300/images/18_SendGrid_Global_Email_Benchmark_Report.pdf&quot;&gt;https://ahoy.sendgrid.com/rs/294-TKB-300/images/18_SendGrid_Global_Email_Benchmark_Report.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.campaignmonitor.com/resources/knowledge-base/what-are-the-average-click-and-read-rates-for-email-campaigns/&quot;&gt;https://www.campaignmonitor.com/resources/knowledge-base/what-are-the-average-click-and-read-rates-for-email-campaigns/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sendgrid.com/blog/click-to-open-rate-how-relevant-is-my-email/&quot;&gt;https://sendgrid.com/blog/click-to-open-rate-how-relevant-is-my-email/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Always Searching for Answers]]></title><description><![CDATA[And the Paralysis That Comes with Doing So I’m overly anxious, always concerned about one thing or another. Generally
 speaking, I’m…]]></description><link>https://cedric.tech/blog/always-searching-for-answers/</link><guid isPermaLink="false">https://cedric.tech/blog/always-searching-for-answers/</guid><pubDate>Wed, 26 Feb 2020 15:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;And the Paralysis That Comes with Doing So&lt;/h2&gt;
 &lt;p&gt;I’m overly anxious, always concerned about one thing or another. Generally
 speaking, I’m uncomfortable with not knowing what’s to come or how to do
