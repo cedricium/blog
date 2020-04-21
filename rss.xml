@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 16 Apr 2020 07:28:29 GMT</lastBuildDate><item><title><![CDATA[Quarantine Reading List]]></title><description><![CDATA[In spite of these dire times, I’ve tried to make the most of the extra time by
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Apr 2020 04:42:12 GMT</lastBuildDate><item><title><![CDATA[Quarantine Reading List]]></title><description><![CDATA[In spite of these dire times, I’ve tried to make the most of the extra time by
 reading more. To my surprise, I have read more books in the…]]></description><link>https://cedric.tech/blog/quarantine-reading-list/</link><guid isPermaLink="false">https://cedric.tech/blog/quarantine-reading-list/</guid><pubDate>Thu, 16 Apr 2020 00:25:00 GMT</pubDate><content:encoded>&lt;p&gt;In spite of these dire times, I’ve tried to make the most of the extra time by
 reading more. To my surprise, I have read more books in the past two-ish months
 than I have in my entire adult life. Like they say, “it’s never too late [to
@@ -15,13 +15,13 @@ while stuck at home during the COVID-19 pandemic.&lt;/p&gt;
 Cain&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Atomic Habits: An Easy &amp;#x26; Proven Way to Build Good Habits &amp;#x26; Break Bad Ones&lt;/em&gt;
 by James Clear&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Close to the Machine&lt;/em&gt; by Ellen Ullman&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Coders: The Making of a New Tribe and the Remaking of the World&lt;/em&gt; by Clive
+Thompson&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;In Progress&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Close to the Machine&lt;/em&gt; by Ellen Ullman&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;The Restaurant at the End of the Universe&lt;/em&gt; (HHGTTG book #2), by Douglas Adams&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Coders: The Making of a New Tribe and the Remaking of the World&lt;/em&gt; by Clive
-Thompson&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Wishlist&lt;/h3&gt;
 &lt;ul&gt;
@@ -37,7 +37,20 @@ by Steven Pressfield&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;The Making of Prince of Persia: Journals 1985-1993&lt;/em&gt; by Jordan Mechner&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you have any suggestions you think I should add to my wishlist, please let me
-know!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Unearth Diary #04: Does It Even Work?]]></title><description><![CDATA[This is the fourth in a series of articles where I discuss my long-time side
+know!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Update (April 20, 2020)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Finished two of the books I was reading when I
+originally published this post. I also wanted to add a link to my &lt;a href=&quot;https://www.goodreads.com/review/list/15263017-cedric?shelf=to-read&quot;&gt;Goodread’s
+“Want to Read” list&lt;/a&gt;
+which is a little more comprehensive than the Wishlist
+above.&lt;/p&gt;
+&lt;p&gt;Speaking of reading lists, I came across a super cool site today on Product
+Hunt: Good Books (&lt;a href=&quot;https://goodbooks.io&quot;&gt;https://goodbooks.io&lt;/a&gt;). From their site:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;6,500+ book recommendations from the most successful and interesting people
+in the world.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Unearth Diary #04: Does It Even Work?]]></title><description><![CDATA[This is the fourth in a series of articles where I discuss my long-time side
 project, Unearth. Unearth is a service that surfaces users…]]></description><link>https://cedric.tech/blog/unearth-diary-04-does-it-even-work/</link><guid isPermaLink="false">https://cedric.tech/blog/unearth-diary-04-does-it-even-work/</guid><pubDate>Thu, 12 Mar 2020 15:50:00 GMT</pubDate><content:encoded>&lt;p&gt;This is the fourth in a series of articles where I discuss my long-time side
 project, Unearth. Unearth is a service that surfaces users’ Reddit saves using
 personalized emails at the frequency of their choice—think of it like Timehop
