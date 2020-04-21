@@ -24,13 +24,13 @@ while stuck at home during the COVID-19 pandemic.
   Cain
 - _Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones_
   by James Clear
+- _Close to the Machine_ by Ellen Ullman
+- _Coders: The Making of a New Tribe and the Remaking of the World_ by Clive
+  Thompson
 
 ### In Progress
 
-- _Close to the Machine_ by Ellen Ullman
 - _The Restaurant at the End of the Universe_ (HHGTTG book #2), by Douglas Adams
-- _Coders: The Making of a New Tribe and the Remaking of the World_ by Clive
-  Thompson
 
 ### Wishlist
 
@@ -47,3 +47,19 @@ while stuck at home during the COVID-19 pandemic.
 
 If you have any suggestions you think I should add to my wishlist, please let me
 know!
+
+---
+
+_Update (April 20, 2020)_
+
+Finished two of the books I was reading when I
+originally published this post. I also wanted to add a link to my [Goodread's
+"Want to Read" list](https://www.goodreads.com/review/list/15263017-cedric?shelf=to-read)
+which is a little more comprehensive than the Wishlist
+above.
+
+Speaking of reading lists, I came across a super cool site today on Product
+Hunt: Good Books (https://goodbooks.io). From their site:
+
+> 6,500+ book recommendations from the most successful and interesting people
+> in the world.
