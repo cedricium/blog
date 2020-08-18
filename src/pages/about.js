@@ -6,31 +6,29 @@ import Footer from '../components/Footer'
 
 class AboutMe extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location}>
         <h3>
-          <Link style={{ boxShadow: 'none' }} to='/'>
+          <Link style={{ boxShadow: 'none' }} to="/">
             {siteTitle}
           </Link>
         </h3>
         <p>
           Hi, I'm Cedric, a 20-something year old indie maker, coffee consumer,
-          and coder. I was born and raised in Washington state and currently
-          reside in California where I go to college to study Computer
-          Science.
+          and coder. Born in Washington state, I currently live in California
+          where I work as a software engineering intern at Moogsoft.
         </p>
         <p>
-          I love working day-to-day on projects that require multidisciplinary
-          skillsets solving complex issues that make the lives of others
-          easier.  When I'm not in front of a computer screen, I'm most likely
-          writing blog posts, playing football with friends, or binge-watching
-          some comedy show on Netflix with my significant other.
+          I love building technically-challenging products that are intuitive
+          and impactful. When I'm not in front of a computer screen, I'm most
+          likely reading, playing football, or watching Netflix with my
+          significant other.
         </p>
         <p>
-          I love meeting new people and making connections, so feel free to
+          I love meeting people and making new connections, so feel free to
           reach out to me on any of the sites listed below. Cheers!
         </p>
         <Footer location={this.props.location} />

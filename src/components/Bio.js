@@ -23,8 +23,8 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Cedric Amaya</strong> who is currently studying
-          Computer Science in sunny California. You should{' '}
+          Written by <strong>Cedric Amaya</strong>, a software engineering
+          intern who enjoys writing about what is on his mind. You should{' '}
           <a
             href="https://twitter.com/cedricamaya"
             target="_blank"
