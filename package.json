@@ -45,6 +45,7 @@
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "format:md": "prettier --print-width 80 --prose-wrap always --write",
     "develop": "gatsby develop",
     "start": "yarn develop",
     "build": "gatsby build",
