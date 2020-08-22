@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 Aug 2020 02:53:19 GMT</lastBuildDate><item><title><![CDATA[Consistency is Hard]]></title><description><![CDATA[It is only the third day since I started my writing challenge and I already
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Aug 2020 04:19:38 GMT</lastBuildDate><item><title><![CDATA[Code Review Checklist]]></title><description><![CDATA[I had an insightful conversation with one of the senior developers on my team
+about code reviews yesterday. Along with explaining why even I…]]></description><link>https://cedric.tech/blog/code-review-checklist/</link><guid isPermaLink="false">https://cedric.tech/blog/code-review-checklist/</guid><pubDate>Fri, 21 Aug 2020 21:18:00 GMT</pubDate><content:encoded>&lt;p&gt;I had an insightful conversation with one of the senior developers on my team
+about code reviews yesterday. Along with explaining why even I—the most junior
+on the team—should conduct code reviews, he also gave me a list of things he
+looks out for when reviewing code.&lt;/p&gt;
+&lt;p&gt;Below is the general outline he follows when doing code reviews. Over time, I
+may add my own things to watch out for once I begin conducting more reviews.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unit tests or a very good reason not to have unit tests?&lt;/li&gt;
+&lt;li&gt;is this absolutely the best array method/data structure/whatever for the
+problem at hand?&lt;/li&gt;
+&lt;li&gt;is this css going to break with a slightly different screen size?&lt;/li&gt;
+&lt;li&gt;if I have to make a change to this code in 6 months, will I understand&lt;br&gt;
+everything (meaning, good comments and good variable names and organization)?&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Consistency is Hard]]></title><description><![CDATA[It is only the third day since I started my writing challenge and I already
 almost missed a day. I didn’t feel like writing so me explaining…]]></description><link>https://cedric.tech/blog/consistency-is-hard/</link><guid isPermaLink="false">https://cedric.tech/blog/consistency-is-hard/</guid><pubDate>Thu, 20 Aug 2020 20:30:00 GMT</pubDate><content:encoded>&lt;p&gt;It is only the third day since I started my writing challenge and I already
 almost missed a day.&lt;/p&gt;
 &lt;p&gt;I didn’t feel like writing so me explaining why that is the case will count
