@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Aug 2020 04:19:38 GMT</lastBuildDate><item><title><![CDATA[Code Review Checklist]]></title><description><![CDATA[I had an insightful conversation with one of the senior developers on my team
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Random Thoughts]]></title><description><![CDATA[Essays, musings, and more by Cedric Amaya.]]></description><link>https://cedric.tech/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Aug 2020 07:19:14 GMT</lastBuildDate><item><title><![CDATA[My Desired Writing Style]]></title><description><![CDATA[One thing I’ve noticed since starting my writing challenge is the number of
+ideas I can come up with on any given day. Now, those ideas are…]]></description><link>https://cedric.tech/blog/my-desired-writing-style/</link><guid isPermaLink="false">https://cedric.tech/blog/my-desired-writing-style/</guid><pubDate>Sat, 22 Aug 2020 23:59:00 GMT</pubDate><content:encoded>&lt;p&gt;One thing I’ve noticed since starting my writing challenge is the number of
+ideas I can come up with on any given day.&lt;/p&gt;
+&lt;p&gt;Now, those ideas are not always good—often they are quite simple, and writing
+more than a tweets-length about them can be difficult. The problem is I end up
+choosing those exact topics since they are easy to write about and take little
+effort on my part.&lt;/p&gt;
+&lt;p&gt;I bring this is up is because I haven’t been particularly happy with the quality
+of my recent posts. When I started this challenge, the only rule put in place
+was the need to write every day.&lt;/p&gt;
+&lt;p&gt;David Perell said it best in a recent tweet:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Writing a lot won’t make you a better writer.&lt;/p&gt;
+&lt;p&gt;If it did everybody who answers 100 emails per day would write like Hemmingway
+[sic].&lt;/p&gt;
+&lt;p&gt;If you want to improve your writing, listen to critical feedback, read great
+books, and spend a lot of time &lt;em&gt;re-writing&lt;/em&gt; your sentences.&lt;sup&gt;1&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When I first developed the interest to start writing I had a specific goal in
+mind: I wanted to write more informative pieces backed with evidence from
+outside resources in the hopes of teaching my readers something.&lt;/p&gt;
+&lt;p&gt;This desire to teach and have a more authoritative writing style was heavily
+influenced by Julian Shapiro’s
+&lt;a href=&quot;https://www.julian.com/guide/write/intro&quot;&gt;&lt;em&gt;Writing Well&lt;/em&gt;&lt;/a&gt; guide. In it, he
+explains the benefits of writing, some of which include becoming “…a better
+all-around thinker” and getting to “…send strangers down paths they badly
+needed.”&lt;/p&gt;
+&lt;p&gt;I’m currently reading Nadia Eghbal’s latest book, &lt;em&gt;Working in Public: The Making
+and Maintenance of Open Source Software&lt;/em&gt;, and she does an amazing job of doing
+just that. The book is essentially a collection of essays, each more informative
+than the next, and containing lots of notes from her years-long research on the
+topic.&lt;/p&gt;
+&lt;p&gt;I feel as though I never quite mastered this particular style of writing, which
+is similar to the kind of essays one would be required to write in school. I
+guess my end goal is ultimately to be a creator whose work is helpful to others.&lt;/p&gt;
+&lt;p&gt;At this point, I’m worried my daily writing challenge may be doing more harm
+than good, or at the least not having the intended effect of driving me towards
+becoming a better writer. Says Julian on writers who publish on a fixed
+schedule:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Efficient reading:&lt;/p&gt;
+&lt;p&gt;Writers who post frequently (2x/wk) are rarely worth reading consistently.&lt;/p&gt;
+&lt;p&gt;I read for insights. And no writer can generate profound insights on a fixed
+schedule.&lt;/p&gt;
+&lt;p&gt;I aggregate writers who publish sporadically. When they post, they truly have
+something to say.&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For my desired writing style, this makes sense: If I have to write every day,
+then I will not have time to research topics. So I may need to rethink my
+writing challenge, at the least altering how often I publish new posts.&lt;/p&gt;
+&lt;p&gt;I think this somewhat meta idea on the benefits of writing could make for a
+great first essay so I may explore it further.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/david_perell/status/1297346170964959233&quot;&gt;https://twitter.com/david_perell/status/1297346170964959233&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/Julian/status/1282025817589952513&quot;&gt;https://twitter.com/Julian/status/1282025817589952513&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Code Review Checklist]]></title><description><![CDATA[I had an insightful conversation with one of the senior developers on my team
 about code reviews yesterday. Along with explaining why even I…]]></description><link>https://cedric.tech/blog/code-review-checklist/</link><guid isPermaLink="false">https://cedric.tech/blog/code-review-checklist/</guid><pubDate>Fri, 21 Aug 2020 21:18:00 GMT</pubDate><content:encoded>&lt;p&gt;I had an insightful conversation with one of the senior developers on my team
 about code reviews yesterday. Along with explaining why even I—the most junior
 on the team—should conduct code reviews, he also gave me a list of things he

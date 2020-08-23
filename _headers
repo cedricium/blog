@@ -37,6 +37,15 @@
   Link: </blog/component---node-modules-gatsby-plugin-offline-app-shell-js-498d614abd91358533fa.js>; rel=preload; as=script
   Link: </blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </blog/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog/my-desired-writing-style/
+  Link: </blog/webpack-runtime-fd20c3b3053950d72cf4.js>; rel=preload; as=script
+  Link: </blog/styles-1a925a1601c065fa085f.js>; rel=preload; as=script
+  Link: </blog/commons-10c682a83ab9b82a429c.js>; rel=preload; as=script
+  Link: </blog/app-7a40cc5851542cac00fa.js>; rel=preload; as=script
+  Link: </blog/commons-10c682a83ab9b82a429c.js>; rel=preload; as=script
+  Link: </blog/component---src-templates-blog-post-js-dc064ca83aa0b38ba8c2.js>; rel=preload; as=script
+  Link: </blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog/page-data/my-desired-writing-style/page-data.json>; rel=preload; as=fetch; crossorigin
 /blog/code-review-checklist/
   Link: </blog/webpack-runtime-fd20c3b3053950d72cf4.js>; rel=preload; as=script
   Link: </blog/styles-1a925a1601c065fa085f.js>; rel=preload; as=script
